@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>Under Wood Construction | Devoted to Craftsmanship</title>
+	<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+	<script id="tailwind-config">
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+				extend: {
+					"colors": {
+						"surface-container-high": "#e9e8e5",
+						"inverse-primary": "#b4cdb8",
+						"surface-container-lowest": "#ffffff",
+						"surface-variant": "#e3e2e0",
+						"on-secondary-fixed": "#2e1500",
+						"secondary-fixed-dim": "#fcb97d",
+						"on-tertiary-container": "#b0898c",
+						"surface-bright": "#fbf9f6",
+						"secondary-fixed": "#ffdcc1",
+						"on-tertiary-fixed-variant": "#5d3f42",
+						"secondary-container": "#ffbb80",
+						"outline": "#737973",
+						"tertiary": "#271013",
+						"on-primary-container": "#819986",
+						"inverse-surface": "#30312f",
+						"on-surface-variant": "#434843",
+						"background": "#fbf9f6",
+						"slate-iron": "#333333",
+						"on-error-container": "#93000a",
+						"tertiary-fixed": "#ffd9dc",
+						"error-container": "#ffdad6",
+						"surface-tint": "#4d6453",
+						"inverse-on-surface": "#f2f1ee",
+						"on-tertiary": "#ffffff",
+						"harvest-oak": "#C68A53",
+						"on-secondary": "#ffffff",
+						"on-error": "#ffffff",
+						"sapwood-cream": "#F9F7F2",
+						"forest-evergreen": "#1B3022",
+						"primary": "#061b0e",
+						"primary-container": "#1b3022",
+						"on-surface": "#1b1c1a",
+						"on-primary": "#ffffff",
+						"secondary": "#855321",
+						"charcoal-etch": "#121212",
+						"outline-variant": "#c3c8c1"
+					},
+					"borderRadius": {
+						"DEFAULT": "0.125rem",
+						"lg": "0.25rem",
+						"xl": "0.5rem",
+						"full": "0.75rem"
+					},
+					"spacing": {
+						"section-gap-lg": "120px",
+						"section-gap-md": "80px",
+						"margin-mobile": "20px",
+						"gutter": "32px",
+						"container-max": "1280px",
+						"base": "8px"
+					},
+					"fontFamily": {
+						"headline-lg": ["Source Serif 4"],
+						"headline-md": ["Source Serif 4"],
+						"display-lg": ["Source Serif 4"],
+						"body-md": ["Hanken Grotesk"],
+						"body-lg": ["Hanken Grotesk"],
+						"label-caps": ["Hanken Grotesk"],
+						"nav-link": ["Hanken Grotesk"]
+					}
+				},
+			},
+		}
+	</script>
+	<style>
+      .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .text-nav-link { font-size: 15px; line-height: 24px; letter-spacing: 0.05em; font-weight: 500; }
+      .text-headline-lg { font-size: 40px; line-height: 48px; font-weight: 600; }
+      .text-headline-md { font-size: 28px; line-height: 36px; font-weight: 600; }
+      .text-display-lg { font-size: 56px; line-height: 64px; letter-spacing: -0.02em; font-weight: 700; }
+      .text-body-md { font-size: 16px; line-height: 24px; font-weight: 400; }
+      .text-body-lg { font-size: 18px; line-height: 28px; font-weight: 400; }
+      .text-label-caps { font-size: 14px; line-height: 20px; letter-spacing: 0.1em; font-weight: 600; }
+	</style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-harvest-oak selection:text-white">
+<!-- Header / Navigation -->
+<header class="w-full top-0 sticky z-50 bg-surface border-b border-outline-variant">
+	<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
+		<div class="flex items-center gap-4">
+			<img alt="Under Wood Construction Logo" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhppYvRlHdHNeTgCK2ZstC-mkJUkRo7TuLJugBMugxS19qItATJf9R8U_bJjOQ-v8kVy77ltQ2CgutQfAqTizUuvkBUEbzNmAbpqqcf4ouc33MsedzJuffWNWN2AhIe9DsgXmGnAZuT9RQOWfHTDVBmIY3CgX3IjgWE5bTuHr6JKtFSDQiUDvyyq0npGhInyfL4XQYa-dIGrCoOEFqWqE8_loNHTtRgXOZz2orqmtxWzBCvJaear74RFC4"/>
+			<span class="font-headline-md text-headline-md font-bold text-forest-evergreen">Under Wood Construction</span>
+		</div>
+		<nav class="hidden md:flex gap-8">
+			<a class="font-nav-link text-nav-link text-secondary border-b-2 border-secondary pb-1 transition-all" href="#home">Home</a>
+			<a class="font-nav-link text-nav-link text-forest-evergreen hover:text-harvest-oak transition-colors duration-200" href="#services">Services</a>
+			<a class="font-nav-link text-nav-link text-forest-evergreen hover:text-harvest-oak transition-colors duration-200" href="#about">About</a>
+			<a class="font-nav-link text-nav-link text-forest-evergreen hover:text-harvest-oak transition-colors duration-200" href="#projects">Projects</a>
+			<a class="font-nav-link text-nav-link text-forest-evergreen hover:text-harvest-oak transition-colors duration-200" href="#contact">Contact</a>
+		</nav>
+		<a class="hidden lg:block bg-forest-evergreen text-sapwood-cream px-6 py-2.5 rounded-none font-label-caps text-label-caps hover:bg-harvest-oak transition-colors duration-300" href="tel:320-248-4774">
+			Call Now
+		</a>
+		<!-- Mobile Menu Toggle -->
+		<button class="md:hidden text-forest-evergreen" onclick="document.getElementById('mobile-nav').classList.toggle('hidden')">
+			<span class="material-symbols-outlined">menu</span>
+		</button>
+	</div>
+</header>
+<!-- Mobile Nav -->
+<div class="hidden fixed inset-0 z-40 bg-surface flex flex-col items-center justify-center gap-8 md:hidden" id="mobile-nav">
+	<button class="absolute top-6 right-6 text-forest-evergreen" onclick="document.getElementById('mobile-nav').classList.add('hidden')">
+		<span class="material-symbols-outlined text-4xl">close</span>
+	</button>
+	<a class="font-headline-md text-headline-md text-forest-evergreen" href="#home" onclick="document.getElementById('mobile-nav').classList.add('hidden')">Home</a>
+	<a class="font-headline-md text-headline-md text-forest-evergreen" href="#services" onclick="document.getElementById('mobile-nav').classList.add('hidden')">Services</a>
+	<a class="font-headline-md text-headline-md text-forest-evergreen" href="#about" onclick="document.getElementById('mobile-nav').classList.add('hidden')">About</a>
+	<a class="font-headline-md text-headline-md text-forest-evergreen" href="#projects" onclick="document.getElementById('mobile-nav').classList.add('hidden')">Projects</a>
+	<a class="font-headline-md text-headline-md text-forest-evergreen" href="#contact" onclick="document.getElementById('mobile-nav').classList.add('hidden')">Contact</a>
+</div>
+<main>
+	<!-- Hero Section -->
+	<section class="relative min-h-[90vh] flex items-center bg-forest-evergreen overflow-hidden" id="home">
+		<div class="absolute inset-0 z-0">
+			<img alt="Primary Timber Frame Structure" class="w-full h-full object-cover opacity-60 scale-105 transition-transform duration-[10000ms] hover:scale-100" src="https://lh3.googleusercontent.com/aida/ADBb0uj3TAgU5cFpd3BZ4cP6UwbGr5kLKDn0BQMGOKgerOyDDJkBzU5B7mx819gZ1uTAwT2CUHCC5KpEJGDR_5xN77xSb-AIrwecqKxbjOiarABtc2lySdwXL0pZkRgu_u451DytN3BbZdrbMiimABHHM4s2DQJ8-5QlXmN8u8WnUifpP3pM8SCEtLVcgJAQdtWIpZdrMO9oqPhFVeynoecb4os67At4DnaweLuWcc98XaQ5ZlQbeF5z6le-8e8"/>
+			<div class="absolute inset-0 bg-gradient-to-r from-forest-evergreen via-forest-evergreen/40 to-transparent"></div>
+		</div>
+		<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap-md">
+			<div class="max-w-3xl">
+				<span class="inline-block px-4 py-1 bg-harvest-oak text-sapwood-cream font-label-caps text-label-caps mb-6">ESTABLISHED CRAFTSMANSHIP</span>
+				<h1 class="font-display-lg text-display-lg text-sapwood-cream mb-8 leading-tight">
+					DEVOTED TO CRAFTSMANSHIP AND CUSTOMER SERVICE
+				</h1>
+				<p class="font-body-lg text-body-lg text-sapwood-cream/90 mb-10 max-w-xl">
+					Precision-built homes and monumental timber structures designed for longevity, heritage, and unparalleled quality in every joint.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4">
+					<a class="bg-harvest-oak text-sapwood-cream px-10 py-4 font-label-caps text-label-caps hover:bg-forest-evergreen border border-harvest-oak transition-all duration-300 text-center" href="#contact">
+						GET A QUOTE
+					</a>
+					<a class="bg-transparent border border-sapwood-cream text-sapwood-cream px-10 py-4 font-label-caps text-label-caps hover:bg-sapwood-cream hover:text-forest-evergreen transition-all duration-300 text-center" href="#services">
+						VIEW SERVICES
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services Bento Grid -->
+	<section class="py-section-gap-lg bg-surface-bright" id="services">
+		<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+			<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+				<div>
+					<span class="font-label-caps text-label-caps text-harvest-oak block mb-2">OUR EXPERTISE</span>
+					<h2 class="font-headline-lg text-headline-lg text-forest-evergreen">Specialized Construction Services</h2>
+				</div>
+				<p class="max-w-md text-on-surface-variant font-body-md">
+					From foundational integrity to the final architectural flourish, we bring technical excellence to every phase of your build.
+				</p>
+			</div>
+			<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+				<!-- Service 1: New Construction -->
+				<div class="md:col-span-7 group bg-sapwood-cream border border-outline-variant p-8 md:p-12 transition-all duration-500 hover:border-harvest-oak relative overflow-hidden">
+					<div class="relative z-10">
+						<span class="material-symbols-outlined text-4xl text-harvest-oak mb-6">foundation</span>
+						<h3 class="font-headline-md text-headline-md text-forest-evergreen mb-4">New Construction</h3>
+						<p class="text-body-md text-on-surface-variant mb-8 leading-relaxed max-w-lg">
+							From foundations to finishes, Under Wood Construction is equipped to tackle your project from the ground up. We build beautiful, functional homes with a focus on structural permanence.
+						</p>
+						<a class="inline-flex items-center gap-2 font-label-caps text-label-caps text-forest-evergreen group-hover:text-harvest-oak transition-colors" href="#contact">
+							INQUIRE ABOUT BUILDS <span class="material-symbols-outlined text-sm">arrow_forward</span>
+						</a>
+					</div>
+					<div class="absolute bottom-[-10%] right-[-5%] opacity-10 group-hover:opacity-20 transition-opacity duration-500">
+						<span class="material-symbols-outlined text-[200px]">architecture</span>
+					</div>
+				</div>
+				<!-- Service 2: Remodeling -->
+				<div class="md:col-span-5 bg-forest-evergreen p-8 md:p-12 text-sapwood-cream flex flex-col justify-between">
+					<div>
+						<span class="material-symbols-outlined text-4xl text-harvest-oak mb-6">handyman</span>
+						<h3 class="font-headline-md text-headline-md mb-4">Remodeling</h3>
+						<p class="text-body-md text-sapwood-cream/80 mb-8">
+							Navigating projects through old homes can be tricky. We have years of experience handling the unique "surprises" that historic structures often hide.
+						</p>
+					</div>
+					<img alt="Remodeling detail work" class="w-full h-48 object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/ADBb0uiI0k2i7tihyYKFC4I-A6Y3pMGamNptYCI2dsZWuunnBgjkRLSlmbcIdjxJXQtezROCFQ42smQcChWV_nB_fIFIcatw_kOvtlfK-ARTgLc3GRrlU8jxwpVC65S889q5HzZctGfDKkn799KyzwgI9WeOrFpFM1vSYXgtDMsvwwjDu2WHSWoz0EKAt7YrBPDeWviIn41BJZ5_E-_96tcOtvNfg-SSOpZG8QB7KMXwnmK4Cg3H90IBybCXyg"/>
+				</div>
+				<!-- Service 3: Timber Frame -->
+				<div class="md:col-span-12 group bg-surface-container overflow-hidden">
+					<div class="grid grid-cols-1 md:grid-cols-2">
+						<div class="p-8 md:p-16 flex flex-col justify-center">
+							<span class="material-symbols-outlined text-4xl text-harvest-oak mb-6">forest</span>
+							<h3 class="font-headline-md text-headline-md text-forest-evergreen mb-6">Timber Frame Structures &amp; Accents</h3>
+							<p class="text-body-lg text-body-lg text-on-surface-variant mb-8">
+								Timber framing combines beauty, function, and form. We work alongside a team of exceptional craftsmen to bring these massive, elegant projects to life, creating spaces that breathe and inspire.
+							</p>
+							<ul class="space-y-4 mb-10">
+								<li class="flex items-center gap-3 font-label-caps text-label-caps text-forest-evergreen">
+									<span class="w-6 h-[1px] bg-harvest-oak"></span> CUSTOM JOINERY
+								</li>
+								<li class="flex items-center gap-3 font-label-caps text-label-caps text-forest-evergreen">
+									<span class="w-6 h-[1px] bg-harvest-oak"></span> SUSTAINABLE MATERIALS
+								</li>
+								<li class="flex items-center gap-3 font-label-caps text-label-caps text-forest-evergreen">
+									<span class="w-6 h-[1px] bg-harvest-oak"></span> STRUCTURAL ARTISTRY
+								</li>
+							</ul>
+						</div>
+						<div class="h-[400px] md:h-auto overflow-hidden relative">
+							<img alt="Timber Frame Detail" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujReW7dm4MpTle1t3Ozra7Pf7oi518_3nticHmlQQDN2JJXJjmSZ4akQEFZyJJt7Go2vyJUPu4t7DzEPDTwyzwsv7oInO9eGIPwpL3BCvD69dnKPo8kNxcuLOfM_K9cigNSQ38Sn37-qSokVZmPmrDdwUox01tjO5cASoGQKYh1Mu1pwewM1ddrobISfXg9gxYRpo-yk9wD6h8NbiChysrDft9Eu-U94iRAG-BNDcCJHVPaxJ-JcOk6eA"/>
+							<div class="absolute inset-0 bg-forest-evergreen/10 group-hover:bg-transparent transition-colors duration-500"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About Section -->
+	<section class="py-section-gap-lg bg-sapwood-cream" id="about">
+		<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+				<div class="lg:col-span-5">
+					<div class="relative">
+						<img alt="Completed Residential Project - Johnson House" class="w-full aspect-[4/5] object-cover shadow-2xl relative z-10" src="https://lh3.googleusercontent.com/aida/ADBb0ujxg5WPfrqKUujfBaWIrf9T3PsdzfwOqE2Gs795TsaIK1iC4PYj3NR-lc76hjNL54WKMdRREHnF6WbwAtR4kjFTwotgdafIDvLV67Ne_JL_d0ZGguqSXpo2d-7U9l7bWDTy5BJYw3IqYZgLM1ey_MtiZnHT5LiIIHp87nqWXZsJDJsSq5qVc-eU3ra5c6TuIILgRk7i0PHeDPbbdQi5SbdcaM64tLwmnJ7pUnklGsdE23xhAyk-KWsNJEE"/>
+						<div class="absolute -top-6 -left-6 w-32 h-32 border-t-2 border-l-2 border-harvest-oak z-0"></div>
+						<div class="absolute -bottom-6 -right-6 w-32 h-32 border-b-2 border-r-2 border-harvest-oak z-0"></div>
+					</div>
+				</div>
+				<div class="lg:col-span-7">
+					<span class="font-label-caps text-label-caps text-harvest-oak block mb-4 uppercase tracking-widest">The Firm</span>
+					<h2 class="font-headline-lg text-headline-lg text-forest-evergreen mb-8">Committed to Professional Excellence</h2>
+					<div class="space-y-6">
+						<p class="text-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+							Under Wood Construction is a fully licensed and insured construction company. Our top priorities are customer service and satisfaction. We aim for quality and excellence in all of the work we do.
+						</p>
+						<p class="text-body-md text-on-surface-variant leading-relaxed">
+							Based in Underwood, MN, we have experience building unique projects and working across multiple locations. Whether it's a remote cabin or a modern suburban residence, we apply the same artisanal rigor to every site.
+						</p>
+					</div>
+					<div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-outline-variant pt-12">
+						<div class="flex items-start gap-4">
+							<span class="material-symbols-outlined text-harvest-oak text-3xl">verified</span>
+							<div>
+								<h4 class="font-label-caps text-label-caps text-forest-evergreen mb-1">CARTER GJEVRE</h4>
+								<p class="text-sm text-on-surface-variant">Owner &amp; Principal Craftsman</p>
+							</div>
+						</div>
+						<div class="flex items-start gap-4">
+							<span class="material-symbols-outlined text-harvest-oak text-3xl">construction</span>
+							<div>
+								<h4 class="font-label-caps text-label-caps text-forest-evergreen mb-1">LICENSE BC-807199</h4>
+								<p class="text-sm text-on-surface-variant">Fully Bonded &amp; Certified Lead Renovator</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Quote / CTA -->
+	<section class="bg-forest-evergreen py-24 relative overflow-hidden">
+		<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center relative z-10">
+			<h2 class="font-headline-lg text-headline-lg text-sapwood-cream mb-8">Ready to start your legacy project?</h2>
+			<div class="flex flex-col items-center gap-6">
+				<p class="text-sapwood-cream/80 text-body-lg max-w-2xl mx-auto">
+					We are currently accepting inquiries for new construction and timber frame structures for the upcoming season.
+				</p>
+				<a class="inline-flex items-center gap-3 text-headline-md font-headline-md text-harvest-oak hover:text-sapwood-cream transition-colors duration-300" href="tel:320-248-4774">
+					<span class="material-symbols-outlined">phone_in_talk</span> 320-248-4774
+				</a>
+			</div>
+		</div>
+		<!-- Decorative Background Element -->
+		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] pointer-events-none">
+			<span class="material-symbols-outlined text-[600px] text-sapwood-cream">carpenter</span>
+		</div>
+	</section>
+	<!-- Contact Section -->
+	<section class="py-section-gap-lg bg-white" id="contact">
+		<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+				<!-- Contact Info -->
+				<div class="lg:col-span-5">
+					<h2 class="font-headline-lg text-headline-lg text-forest-evergreen mb-8">Connect With Us</h2>
+					<p class="text-body-lg text-on-surface-variant mb-12">
+						For any inquiries, questions, or project commendations, please reach out. We look forward to discussing your vision.
+					</p>
+					<div class="space-y-10">
+						<div class="flex items-center gap-6">
+							<div class="w-14 h-14 bg-surface-container-high flex items-center justify-center rounded-none">
+								<span class="material-symbols-outlined text-forest-evergreen">location_on</span>
+							</div>
+							<div>
+								<p class="font-label-caps text-label-caps text-forest-evergreen uppercase">Our Studio</p>
+								<p class="text-on-surface-variant">31755 County Highway 1, Underwood, MN 56586</p>
+							</div>
+						</div>
+						<div class="flex items-center gap-6">
+							<div class="w-14 h-14 bg-surface-container-high flex items-center justify-center rounded-none">
+								<span class="material-symbols-outlined text-forest-evergreen">call</span>
+							</div>
+							<div>
+								<p class="font-label-caps text-label-caps text-forest-evergreen uppercase">Direct Line</p>
+								<p class="text-on-surface-variant">320-248-4774</p>
+							</div>
+						</div>
+					</div>
+					<!-- Map Placeholder -->
+					<div class="mt-12 w-full h-64 grayscale opacity-80 border border-outline-variant overflow-hidden">
+						<img alt="Under Wood Construction Location Map" class="w-full h-full object-cover" data-location="Underwood, MN" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQUxkqGHeN5HfAWjfWbppofH1BOJ0feU6D_oRicRDm8WP_wQ5YmtTd9VmFDDW3CrTJP7KBVHY4zyP4yyhYf4pjvLmmNU2XA6_s1TVCvS48rzkyICU2lfZzwdVgyDUemQRseTP6a3iDWkEGUK7MonXl19FmG8FKhVeUipTFcKYiPJC_ZRroW-poLvvrrEble_xiX67ukc491UXtA-WRLTpui569_J7UUSLvoE9csTshoPY62jzguT06fXspoMojZkMYihVyvkEDDZk"/>
+					</div>
+				</div>
+				<!-- Contact Form -->
+				<div class="lg:col-span-7 bg-sapwood-cream p-8 md:p-12 shadow-sm">
+					<form class="grid grid-cols-1 md:grid-cols-2 gap-6" onsubmit="event.preventDefault(); alert('Thanks for submitting! We will contact you soon.')">
+						<div class="md:col-span-1">
+							<label class="block font-label-caps text-label-caps text-forest-evergreen mb-2 uppercase">First Name</label>
+							<input class="w-full bg-white border-outline-variant focus:border-harvest-oak focus:ring-0 transition-colors py-3" required="" type="text"/>
+						</div>
+						<div class="md:col-span-1">
+							<label class="block font-label-caps text-label-caps text-forest-evergreen mb-2 uppercase">Last Name</label>
+							<input class="w-full bg-white border-outline-variant focus:border-harvest-oak focus:ring-0 transition-colors py-3" required="" type="text"/>
+						</div>
+						<div class="md:col-span-2">
+							<label class="block font-label-caps text-label-caps text-forest-evergreen mb-2 uppercase">Email Address</label>
+							<input class="w-full bg-white border-outline-variant focus:border-harvest-oak focus:ring-0 transition-colors py-3" required="" type="email"/>
+						</div>
+						<div class="md:col-span-2">
+							<label class="block font-label-caps text-label-caps text-forest-evergreen mb-2 uppercase">Subject</label>
+							<input class="w-full bg-white border-outline-variant focus:border-harvest-oak focus:ring-0 transition-colors py-3" type="text"/>
+						</div>
+						<div class="md:col-span-2">
+							<label class="block font-label-caps text-label-caps text-forest-evergreen mb-2 uppercase">Message</label>
+							<textarea class="w-full bg-white border-outline-variant focus:border-harvest-oak focus:ring-0 transition-colors py-3" required="" rows="4"></textarea>
+						</div>
+						<div class="md:col-span-2">
+							<button class="w-full bg-forest-evergreen text-sapwood-cream py-4 font-label-caps text-label-caps hover:bg-harvest-oak transition-all duration-300" type="submit">
+								SUBMIT INQUIRY
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-primary-container">
+	<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap-md flex flex-col md:flex-row justify-between gap-12">
+		<div class="md:max-w-xs">
+			<div class="flex items-center gap-3 mb-6">
+				<img alt="Logo" class="h-10 w-10 brightness-0 invert" src="https://lh3.googleusercontent.com/aida/ADBb0uhppYvRlHdHNeTgCK2ZstC-mkJUkRo7TuLJugBMugxS19qItATJf9R8U_bJjOQ-v8kVy77ltQ2CgutQfAqTizUuvkBUEbzNmAbpqqcf4ouc33MsedzJuffWNWN2AhIe9DsgXmGnAZuT9RQOWfHTDVBmIY3CgX3IjgWE5bTuHr6JKtFSDQiUDvyyq0npGhInyfL4XQYa-dIGrCoOEFqWqE8_loNHTtRgXOZz2orqmtxWzBCvJaear74RFC4"/>
+				<h2 class="font-headline-md text-headline-md text-sapwood-cream uppercase tracking-tight">Under Wood</h2>
+			</div>
+			<p class="text-sapwood-cream/70 text-body-md mb-8">
+				Crafting monumental structures and refined living spaces with a devotion to the art of timber and stone.
+			</p>
+			<div class="flex gap-4">
+				<a class="w-10 h-10 rounded-full border border-sapwood-cream/20 flex items-center justify-center text-sapwood-cream hover:bg-harvest-oak hover:border-harvest-oak transition-all duration-300" href="#">
+					<span class="material-symbols-outlined text-lg">public</span>
+				</a>
+				<a class="w-10 h-10 rounded-full border border-sapwood-cream/20 flex items-center justify-center text-sapwood-cream hover:bg-harvest-oak hover:border-harvest-oak transition-all duration-300" href="#">
+					<span class="material-symbols-outlined text-lg">group</span>
+				</a>
+			</div>
+		</div>
+		<div class="grid grid-cols-2 gap-12">
+			<div>
+				<h4 class="font-label-caps text-label-caps text-harvest-oak mb-6 uppercase">Navigation</h4>
+				<ul class="space-y-4">
+					<li><a class="text-sapwood-cream/80 hover:text-sapwood-cream transition-colors text-body-md" href="#services">Services</a></li>
+					<li><a class="text-sapwood-cream/80 hover:text-sapwood-cream transition-colors text-body-md" href="#projects">Projects</a></li>
+					<li><a class="text-sapwood-cream/80 hover:text-sapwood-cream transition-colors text-body-md" href="#about">About Us</a></li>
+					<li><a class="text-sapwood-cream/80 hover:text-sapwood-cream transition-colors text-body-md" href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<div>
+				<h4 class="font-label-caps text-label-caps text-harvest-oak mb-6 uppercase">Legal</h4>
+				<ul class="space-y-4">
+					<li><a class="text-sapwood-cream/80 hover:text-sapwood-cream transition-colors text-body-md" href="#">Privacy Policy</a></li>
+					<li><a class="text-sapwood-cream/80 hover:text-sapwood-cream transition-colors text-body-md" href="#">Terms of Service</a></li>
+					<li><a class="text-sapwood-cream/80 hover:text-sapwood-cream transition-colors text-body-md" href="#">License Info</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-8 border-t border-sapwood-cream/10">
+		<p class="text-sapwood-cream/50 text-label-caps text-[12px] uppercase tracking-wider text-center md:text-left">
+			© 2024 Under Wood Construction. All rights reserved. Licensed &amp; Bonded. MN License BC-807199.
+		</p>
+	</div>
+</footer>
+<script>
+	// Micro-interaction for revealing sections on scroll
+	const observerOptions = {
+		threshold: 0.1
+	};
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add('opacity-100');
+				entry.target.classList.remove('translate-y-10', 'opacity-0');
+			}
+		});
+	}, observerOptions);
+
+	document.querySelectorAll('section').forEach(section => {
+		section.classList.add('transition-all', 'duration-1000', 'translate-y-10', 'opacity-0');
+		observer.observe(section);
+	});
+
+	// Instant removal of initial opacity for hero to ensure prompt loading
+	document.querySelector('#home').classList.remove('opacity-0', 'translate-y-10');
+</script>
+</body></html>
