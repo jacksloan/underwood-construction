@@ -21,15 +21,7 @@
 	function setActiveHash(hash: string) {
 		if (debounceTimer) clearTimeout(debounceTimer);
 		debounceTimer = setTimeout(() => {
-			if (hash === activeHash) return;
-			if (document.startViewTransition) {
-				document.startViewTransition({
-					update: () => { activeHash = hash; },
-					types: ['nav-only']
-				});
-			} else {
-				activeHash = hash;
-			}
+			activeHash = hash;
 		}, DEBOUNCE_MS);
 	}
 
@@ -122,8 +114,8 @@
 				{@const active = isActive(link.href)}
 				<a
 					href={link.href}
-					class="nav-link relative pb-1 text-[15px] font-medium leading-6 tracking-[0.05em] font-sans transition-colors duration-200
-						{active ? 'text-accent is-active' : 'text-forest-evergreen hover:text-harvest-oak'}"
+					class="pb-1 text-[15px] font-medium leading-6 tracking-[0.05em] font-sans transition-colors duration-200
+						{active ? 'border-b-2 border-secondary text-accent' : 'text-forest-evergreen hover:text-harvest-oak'}"
 				>
 					{link.label}
 				</a>
@@ -166,31 +158,3 @@
 	</div>
 {/if}
 
-<style>
-	:global(.nav-link) {
-		position: relative;
-	}
-
-	:global(.nav-link)::after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		height: 2px;
-		background-color: var(--color-secondary);
-		scale: 0 1;
-	}
-
-	:global(.nav-link.is-active)::after {
-		scale: 1 1;
-		view-transition-name: nav-underline;
-	}
-
-	::view-transition-old(nav-underline),
-	::view-transition-new(nav-underline) {
-		animation-duration: 300ms;
-		animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		height: 100%;
-	}
-</style>
