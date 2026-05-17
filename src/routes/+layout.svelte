@@ -9,14 +9,15 @@
 
 	let { children } = $props();
 
-	afterNavigate(() => {
-		const hash = window.location.hash;
+	afterNavigate((nav) => {
+		// Only handle cross-page navigations with a hash
+		if (nav.from?.url.pathname === nav.to?.url.pathname) return;
+		const hash = nav.to?.url.hash;
 		if (!hash) return;
-		// Wait for the fade-in to start so the target element exists in the DOM
 		setTimeout(() => {
 			const el = document.querySelector(hash);
 			el?.scrollIntoView({ behavior: 'smooth' });
-		}, 200);
+		}, 50);
 	});
 </script>
 
@@ -26,7 +27,7 @@
 	<Nav />
 	<main class="flex-1">
 		{#key page.url.pathname}
-			<div in:fade={{ duration: 300, delay: 150 }} out:fade={{ duration: 150 }}>
+			<div in:fade={{ duration: 200 }}>
 				{@render children()}
 			</div>
 		{/key}
