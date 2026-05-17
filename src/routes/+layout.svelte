@@ -1,7 +1,5 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
-	import { page } from '$app/state';
-	import { afterNavigate } from '$app/navigation';
+	import { onNavigate, afterNavigate } from '$app/navigation';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Nav from '$lib/components/Nav.svelte';
@@ -9,15 +7,24 @@
 
 	let { children } = $props();
 
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
+
 	afterNavigate((nav) => {
-		// Only handle cross-page navigations with a hash
 		if (nav.from?.url.pathname === nav.to?.url.pathname) return;
 		const hash = nav.to?.url.hash;
 		if (!hash) return;
-		setTimeout(() => {
+		requestAnimationFrame(() => {
 			const el = document.querySelector(hash);
 			el?.scrollIntoView({ behavior: 'smooth' });
-		}, 50);
+		});
 	});
 </script>
 
@@ -26,11 +33,7 @@
 <div class="flex min-h-screen flex-col bg-base-100 font-sans text-base-content">
 	<Nav />
 	<main class="flex-1">
-		{#key page.url.pathname}
-			<div in:fade={{ duration: 200 }}>
-				{@render children()}
-			</div>
-		{/key}
+		{@render children()}
 	</main>
 	<Footer />
 </div>
