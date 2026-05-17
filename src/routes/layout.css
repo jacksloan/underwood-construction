@@ -1,5 +1,68 @@
 @import 'tailwindcss';
-@import 'tailwindcss';
-@plugin 'daisyui';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+@plugin 'daisyui';
+
+:root {
+	color-scheme: light;
+	--color-primary: oklch(28.14% 0.046 153.36);
+	--color-primary-content: oklch(97.23% 0.006 106.28);
+	--color-secondary: oklch(68.02% 0.117 59.43);
+	--color-secondary-content: oklch(97.23% 0.006 106.28);
+	--color-accent: oklch(48.71% 0.104 52.28);
+	--color-accent-content: oklch(100% 0 0);
+	--color-neutral: oklch(30.59% 0.006 286.03);
+	--color-neutral-content: oklch(97.23% 0.006 106.28);
+	--color-base-100: oklch(97.96% 0.004 96.35);
+	--color-base-200: oklch(95.27% 0.006 96.35);
+	--color-base-300: oklch(93.07% 0.008 96.35);
+	--color-base-content: oklch(22.12% 0.006 106.28);
+	--color-info: oklch(46.06% 0.04 153.36);
+	--color-info-content: oklch(97.23% 0.006 106.28);
+	--color-success: oklch(82.63% 0.06 153.36);
+	--color-success-content: oklch(16.16% 0.036 153.36);
+	--color-warning: oklch(82.37% 0.105 73.74);
+	--color-warning-content: oklch(26.57% 0.05 46.66);
+	--color-error: oklch(52.85% 0.191 27.33);
+	--color-error-content: oklch(100% 0 0);
+	--radius-selector: 0.125rem;
+	--radius-field: 0.125rem;
+	--radius-box: 0.125rem;
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+	--border: 1px;
+	--depth: 1;
+	--noise: 0;
+}
+
+@theme {
+	--color-forest-evergreen: #1b3022;
+	--color-sapwood-cream: #f9f7f2;
+	--color-harvest-oak: #c68a53;
+	--color-charcoal-etch: #121212;
+	--color-slate-iron: #333333;
+	--color-outline-variant: #c3c8c1;
+	--color-on-surface-variant: #434843;
+	--color-surface-bright: #fbf9f6;
+	--color-surface-container: #efeeeb;
+	--color-surface-container-high: #e9e8e5;
+
+	--font-serif: 'Source Serif 4', serif;
+	--font-sans: 'Hanken Grotesk', sans-serif;
+
+	--spacing-section-gap-lg: 120px;
+	--spacing-section-gap-md: 80px;
+	--spacing-gutter: 32px;
+	--spacing-margin-mobile: 20px;
+	--spacing-container-max: 1280px;
+}
+
+.material-symbols-outlined {
+	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+	vertical-align: middle;
+}
+
+::selection {
+	background-color: var(--color-harvest-oak);
+	color: white;
+}
