@@ -8,7 +8,7 @@
 <svelte:head>
 	<title>Under Wood Construction | General Contractor Ely & North Shore MN</title>
 	<meta name="description" content="Under Wood Construction is a licensed and insured general contractor serving Ely, Grand Marais, North Shore, and the Arrowhead Region of Minnesota. Specializing in new construction, remodeling, and timber frame structures." />
-	<meta name="keywords" content="general contractor Ely MN, timber frame North Shore, construction Grand Marais, remodeling Lutsen, builder Cook County Minnesota, contractor Arrowhead Region, home builder Tofte, Silver Bay contractor, Hovland construction" />
+	<meta name="keywords" content="general contractor Ely MN, timber frame North Shore, construction Grand Marais, remodeling Lutsen, builder Cook County Minnesota, contractor Arrowhead Region, home builder Tofte, Silver Bay contractor, Hovland construction, Fergus Falls contractor, Underwood MN builder, general contractor Detroit Lakes, construction Pelican Rapids, Battle Lake builder, Perham contractor, Alexandria MN construction, Duluth contractor, Otter Tail County builder" />
 	<meta name="geo.region" content="US-MN" />
 	<meta name="geo.placename" content="Ely, Minnesota" />
 	<meta property="og:title" content="Under Wood Construction | General Contractor Ely & North Shore MN" />
