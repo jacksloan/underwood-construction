@@ -6,8 +6,21 @@
 </script>
 
 <svelte:head>
-	<title>Under Wood Construction | Devoted to Craftsmanship</title>
-	<meta name="description" content="Under Wood Construction is a licensed and insured general contracting company devoted to craftsmanship and customer service." />
+	<title>Under Wood Construction | General Contractor Ely & North Shore MN</title>
+	<meta name="description" content="Under Wood Construction is a licensed and insured general contractor serving Ely, Grand Marais, North Shore, and the Arrowhead Region of Minnesota. Specializing in new construction, remodeling, and timber frame structures." />
+	<meta name="keywords" content="general contractor Ely MN, timber frame North Shore, construction Grand Marais, remodeling Lutsen, builder Cook County Minnesota, contractor Arrowhead Region, home builder Tofte, Silver Bay contractor, Hovland construction" />
+	<meta name="geo.region" content="US-MN" />
+	<meta name="geo.placename" content="Ely, Minnesota" />
+	<meta property="og:title" content="Under Wood Construction | General Contractor Ely & North Shore MN" />
+	<meta property="og:description" content="Licensed and insured general contractor devoted to craftsmanship. Serving Ely, Grand Marais, the North Shore, and Cook County, Minnesota." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://underwoodconstruction.com" />
+	<meta property="og:image" content="https://underwoodconstruction.com/images/logo.jpg" />
+	<meta property="og:locale" content="en_US" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Under Wood Construction | General Contractor Ely & North Shore MN" />
+	<meta name="twitter:description" content="Licensed and insured general contractor devoted to craftsmanship. Serving Ely, Grand Marais, the North Shore, and Cook County, Minnesota." />
+	<meta name="twitter:image" content="https://underwoodconstruction.com/images/logo.jpg" />
 </svelte:head>
 
 <!-- Hero Section -->

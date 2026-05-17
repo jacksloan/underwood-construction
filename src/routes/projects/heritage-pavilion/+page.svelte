@@ -8,8 +8,12 @@
 </script>
 
 <svelte:head>
-	<title>The Heritage Pavilion | Under Wood Construction</title>
-	<meta name="description" content="A masterclass in traditional timber framing and modern architectural design featuring hand-cut mortise and tenon joinery." />
+	<title>The Heritage Pavilion | Timber Frame Project | Under Wood Construction</title>
+	<meta name="description" content="The Heritage Pavilion — a masterclass in traditional timber framing featuring hand-cut mortise and tenon joinery. Built by Under Wood Construction in Minnesota's Arrowhead Region." />
+	<meta property="og:title" content="The Heritage Pavilion | Under Wood Construction" />
+	<meta property="og:description" content="Traditional mortise and tenon joinery meets modern architectural design. A timber frame pavilion built in Minnesota." />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="https://underwoodconstruction.com/images/logo.jpg" />
 </svelte:head>
 
 <!-- Hero Section -->
