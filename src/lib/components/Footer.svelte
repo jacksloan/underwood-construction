@@ -22,7 +22,7 @@
 		</div>
 		<div class="grid grid-cols-2 gap-12">
 			<div>
-				<h4 class="mb-6 text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-harvest-oak">Navigation</h4>
+				<p class="mb-6 text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-harvest-oak">Navigation</p>
 				<ul class="space-y-4">
 					<li><a class="text-[16px] leading-6 text-sapwood-cream/80 transition-colors hover:text-sapwood-cream" href="/#services">Services</a></li>
 					<li><a class="text-[16px] leading-6 text-sapwood-cream/80 transition-colors hover:text-sapwood-cream" href="/projects">Projects</a></li>
@@ -31,7 +31,7 @@
 				</ul>
 			</div>
 			<div>
-				<h4 class="mb-6 text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-harvest-oak">Legal</h4>
+				<p class="mb-6 text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-harvest-oak">Legal</p>
 				<ul class="space-y-4">
 					<li><a class="text-[16px] leading-6 text-sapwood-cream/80 transition-colors hover:text-sapwood-cream" href="/">Privacy Policy</a></li>
 					<li><a class="text-[16px] leading-6 text-sapwood-cream/80 transition-colors hover:text-sapwood-cream" href="/">Terms of Service</a></li>

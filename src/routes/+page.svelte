@@ -162,14 +162,14 @@
 					<div class="flex items-start gap-4">
 						<Icon name="verified" class="text-3xl text-harvest-oak" />
 						<div>
-							<h4 class="mb-1 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">CARTER GJEVRE</h4>
+							<p class="mb-1 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">CARTER GJEVRE</p>
 							<p class="text-sm text-on-surface-variant">Owner &amp; Principal Craftsman</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
 						<Icon name="construction" class="text-3xl text-harvest-oak" />
 						<div>
-							<h4 class="mb-1 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">LICENSE BC-807199</h4>
+							<p class="mb-1 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">LICENSE BC-807199</p>
 							<p class="text-sm text-on-surface-variant">Fully Bonded &amp; Certified Lead Renovator</p>
 						</div>
 					</div>

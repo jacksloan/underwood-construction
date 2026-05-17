@@ -50,24 +50,24 @@
 				{:else}
 					<form class="grid grid-cols-1 gap-6 md:grid-cols-2" onsubmit={handleSubmit}>
 						<div class="md:col-span-1">
-							<label class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">First Name</label>
-							<input type="text" required class="input input-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none" />
+							<label for="contact-first-name" class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">First Name</label>
+							<input id="contact-first-name" type="text" required class="input input-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none" />
 						</div>
 						<div class="md:col-span-1">
-							<label class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">Last Name</label>
-							<input type="text" required class="input input-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none" />
+							<label for="contact-last-name" class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">Last Name</label>
+							<input id="contact-last-name" type="text" required class="input input-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none" />
 						</div>
 						<div class="md:col-span-2">
-							<label class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">Email Address</label>
-							<input type="email" required class="input input-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none" />
+							<label for="contact-email" class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">Email Address</label>
+							<input id="contact-email" type="email" required class="input input-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none" />
 						</div>
 						<div class="md:col-span-2">
-							<label class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">Subject</label>
-							<input type="text" class="input input-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none" />
+							<label for="contact-subject" class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">Subject</label>
+							<input id="contact-subject" type="text" class="input input-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none" />
 						</div>
 						<div class="md:col-span-2">
-							<label class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">Message</label>
-							<textarea required rows="4" class="textarea textarea-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none"></textarea>
+							<label for="contact-message" class="label mb-2 text-[14px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">Message</label>
+							<textarea id="contact-message" required rows="4" class="textarea textarea-bordered w-full rounded-none border-outline-variant bg-white focus:border-harvest-oak focus:outline-none"></textarea>
 						</div>
 						<div class="md:col-span-2">
 							<button type="submit" class="btn btn-primary w-full rounded-none text-[14px] font-semibold uppercase tracking-[0.1em] hover:bg-harvest-oak">
