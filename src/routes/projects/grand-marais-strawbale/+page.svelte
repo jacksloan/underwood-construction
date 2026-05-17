@@ -128,13 +128,13 @@
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
 					<img
-						alt="Sauna Frame Construction"
+						alt="Standalone Timber Frame Sauna"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
 						src="/images/project-9-grand-marais-sauna-frame.jpg"
 					/>
 				</div>
-				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Framing Detail</h3>
-				<p class="text-[16px] leading-6 text-on-surface-variant/70">Precise structural framing for long-term durability.</p>
+				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Timber Frame Sauna</h3>
+				<p class="text-[16px] leading-6 text-on-surface-variant/70">A timber frame sauna will be completed with a living green roof, echoing the living roof detail of the main home.</p>
 			</div>
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
@@ -167,7 +167,7 @@
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Studio Space</h3>
-				<p class="text-[16px] leading-6 text-on-surface-variant/70">A dedicated creative workspace within the home.</p>
+				<p class="text-[16px] leading-6 text-on-surface-variant/70">Dense strawbale walls, with the combination of soft and hard finishes, create a natural acoustic environment.</p>
 			</div>
 		</div>
 	</div>
