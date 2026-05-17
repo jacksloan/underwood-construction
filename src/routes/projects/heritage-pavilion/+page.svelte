@@ -22,7 +22,7 @@
 		alt="The Heritage Pavilion Finished Frame"
 		class="absolute inset-0 h-full w-full object-cover contrast-[1.1] grayscale-[20%]"
 		style={heroTransition}
-		src="https://lh3.googleusercontent.com/aida/ADBb0uj3TAgU5cFpd3BZ4cP6UwbGr5kLKDn0BQMGOKgerOyDDJkBzU5B7mx819gZ1uTAwT2CUHCC5KpEJGDR_5xN77xSb-AIrwecqKxbjOiarABtc2lySdwXL0pZkRgu_u451DytN3BbZdrbMiimABHHM4s2DQJ8-5QlXmN8u8WnUifpP3pM8SCEtLVcgJAQdtWIpZdrMO9oqPhFVeynoecb4os67At4DnaweLuWcc98XaQ5ZlQbeF5z6le-8e8"
+		src="/images/pavillion.png"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-t from-forest-evergreen/80 to-transparent"></div>
 	<div class="relative mx-auto w-full max-w-container-max px-margin-mobile pb-16 md:px-gutter md:pb-24">
@@ -85,7 +85,7 @@
 					<img
 						alt="The Radial Roof Assembly Under Construction"
 						class="aspect-[4/3] w-full object-cover"
-						src="https://lh3.googleusercontent.com/aida/ADBb0ujnjRPUVboJSUGkZsv702_WDzw4BAJhFq17WT5p96MaQQXYDN1saaC56wSrO-_JhDvJvEcO8VuYKDH1VGDIeQxfgwlb15TLD0KqvG7fXRBIn_VTYcbGz_tPkuFbUY_P_4izJttqmqd1E7eE14ngJMcdmLpuMxACFVC91BqEXcgw0POyU7rEnFV0SymbM_zBVevebkNhhdmGiwZKRa4GoUxFbMyT7w6qS0xPQ_MmCbfoX70pS1ey86dIPI0"
+						src="/images/pavillion-assembly.png"
 					/>
 				</div>
 			</div>
@@ -109,7 +109,7 @@
 					<img
 						alt="Traditional Mortise and Tenon Joinery Close-up"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="https://lh3.googleusercontent.com/aida/ADBb0ugAfzpd6GGd-EjayH_e42angiULL06uJZhEsVLaUtQTzzuK_yLyAawaHiNjRakGehjIdF-Gd9uNRF9V7Hw62tZ_Mg_SVtDn9QZFKYHho11VxcndwaQKxXkL5WO6PniG5BTY6zj4U1H9eU7vc2MvdkpwyWN4hj1od8nRgEy7PN4eqcM8AmF1WyPBJFZ-hXGRRsNSDP9Pf-5SeB_cqmSBOiqyAbMymoiTKY4EoQjiKxf5a-yEznAXV3CumQ"
+						src="/images/salvaged-timbers.png"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Precision Joinery</h3>
@@ -121,7 +121,7 @@
 					<img
 						alt="Timber Framing Radial Roof Structure"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="https://lh3.googleusercontent.com/aida/ADBb0ujnjRPUVboJSUGkZsv702_WDzw4BAJhFq17WT5p96MaQQXYDN1saaC56wSrO-_JhDvJvEcO8VuYKDH1VGDIeQxfgwlb15TLD0KqvG7fXRBIn_VTYcbGz_tPkuFbUY_P_4izJttqmqd1E7eE14ngJMcdmLpuMxACFVC91BqEXcgw0POyU7rEnFV0SymbM_zBVevebkNhhdmGiwZKRa4GoUxFbMyT7w6qS0xPQ_MmCbfoX70pS1ey86dIPI0"
+						src="/images/pavillion-assembly.png"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Radial Engineering</h3>
@@ -133,7 +133,7 @@
 					<img
 						alt="Heritage Pavilion Frame Standing High"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="https://lh3.googleusercontent.com/aida/ADBb0uj3TAgU5cFpd3BZ4cP6UwbGr5kLKDn0BQMGOKgerOyDDJkBzU5B7mx819gZ1uTAwT2CUHCC5KpEJGDR_5xN77xSb-AIrwecqKxbjOiarABtc2lySdwXL0pZkRgu_u451DytN3BbZdrbMiimABHHM4s2DQJ8-5QlXmN8u8WnUifpP3pM8SCEtLVcgJAQdtWIpZdrMO9oqPhFVeynoecb4os67At4DnaweLuWcc98XaQ5ZlQbeF5z6le-8e8"
+						src="/images/timber-frame-entry.png"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Skeletal Integrity</h3>

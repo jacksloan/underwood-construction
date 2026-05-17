@@ -63,7 +63,7 @@
 					category="TIMBER FRAME STRUCTURES"
 					title="The Heritage Pavillion"
 					description="Traditional mortise and tenon joinery meets modern architectural design. A masterclass in structural integrity and aesthetic warmth."
-					image="https://lh3.googleusercontent.com/aida/ADBb0uj3TAgU5cFpd3BZ4cP6UwbGr5kLKDn0BQMGOKgerOyDDJkBzU5B7mx819gZ1uTAwT2CUHCC5KpEJGDR_5xN77xSb-AIrwecqKxbjOiarABtc2lySdwXL0pZkRgu_u451DytN3BbZdrbMiimABHHM4s2DQJ8-5QlXmN8u8WnUifpP3pM8SCEtLVcgJAQdtWIpZdrMO9oqPhFVeynoecb4os67At4DnaweLuWcc98XaQ5ZlQbeF5z6le-8e8"
+					image="/images/pavillion.png"
 					icon="architecture"
 					href="/projects/heritage-pavilion"
 				/>
@@ -77,7 +77,7 @@
 					category="NEW CONSTRUCTION"
 					title="Modern Estate Home"
 					description="A comprehensive ground-up build prioritizing energy efficiency and luxury finishes."
-					image="https://lh3.googleusercontent.com/aida/ADBb0ujxg5WPfrqKUujfBaWIrf9T3PsdzfwOqE2Gs795TsaIK1iC4PYj3NR-lc76hjNL54WKMdRREHnF6WbwAtR4kjFTwotgdafIDvLV67Ne_JL_d0ZGguqSXpo2d-7U9l7bWDTy5BJYw3IqYZgLM1ey_MtiZnHT5LiIIHp87nqWXZsJDJsSq5qVc-eU3ra5c6TuIILgRk7i0PHeDPbbdQi5SbdcaM64tLwmnJ7pUnklGsdE23xhAyk-KWsNJEE"
+					image="/images/grand-marais-strawbale.jpg"
 				/>
 			</div>
 
@@ -89,7 +89,7 @@
 					category="SMALL & SUSTAINABLE"
 					title="The Eco-Studio"
 					description="Maximizing utility in a compact footprint with reclaimed materials and passive design."
-					image="https://lh3.googleusercontent.com/aida/ADBb0ujReW7dm4MpTle1t3Ozra7Pf7oi518_3nticHmlQQDN2JJXJjmSZ4akQEFZyJJt7Go2vyJUPu4t7DzEPDTwyzwsv7oInO9eGIPwpL3BCvD69dnKPo8kNxcuLOfM_K9cigNSQ38Sn37-qSokVZmPmrDdwUox01tjO5cASoGQKYh1Mu1pwewM1ddrobISfXg9gxYRpo-yk9wD6h8NbiChysrDft9Eu-U94iRAG-BNDcCJHVPaxJ-JcOk6eA"
+					image="/images/rustic-shed.jpg"
 				/>
 			</div>
 
@@ -100,7 +100,7 @@
 					category="TIMBER FRAME STRUCTURES"
 					title="Lakeside Frame Barn"
 					description="A robust, functional space celebrating the raw beauty of kiln-dried pine and hand-finished timbers."
-					image="https://lh3.googleusercontent.com/aida/ADBb0uiI0k2i7tihyYKFC4I-A6Y3pMGamNptYCI2dsZWuunnBgjkRLSlmbcIdjxJXQtezROCFQ42smQcChWV_nB_fIFIcatw_kOvtlfK-ARTgLc3GRrlU8jxwpVC65S889q5HzZctGfDKkn799KyzwgI9WeOrFpFM1vSYXgtDMsvwwjDu2WHSWoz0EKAt7YrBPDeWviIn41BJZ5_E-_96tcOtvNfg-SSOpZG8QB7KMXwnmK4Cg3H90IBybCXyg"
+					image="/images/shotgun-timberframe.jpg"
 				/>
 			</div>
 		</div>
