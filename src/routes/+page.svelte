@@ -88,7 +88,7 @@
 					<img
 						alt="Remodeling detail work"
 						class="h-48 w-full object-cover brightness-75 grayscale transition-all duration-700 hover:grayscale-0"
-						src="/images/underwood-gambrel-remodel.jpg"
+						src="/images/project-7-underwood-gambrel-remodel.jpg"
 					/>
 				</ServiceCard>
 			</div>
@@ -115,7 +115,7 @@
 						<img
 							alt="Timber Frame Detail"
 							class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
-							src="/images/lakeside-timberframe.png"
+							src="/images/project-1-lakeside-timberframe.png"
 						/>
 					{/snippet}
 				</ServiceCard>
@@ -133,7 +133,7 @@
 					<img
 						alt="Completed Residential Project"
 						class="relative z-10 aspect-[4/5] w-full object-cover shadow-2xl"
-						src="/images/sauna-exterior.jpg"
+						src="/images/project-3-sauna-exterior.jpg"
 					/>
 					<div class="absolute -left-6 -top-6 z-0 h-32 w-32 border-l-2 border-t-2 border-harvest-oak"></div>
 					<div class="absolute -bottom-6 -right-6 z-0 h-32 w-32 border-b-2 border-r-2 border-harvest-oak"></div>

@@ -8,27 +8,27 @@
 </script>
 
 <svelte:head>
-	<title>The Heritage Pavilion | Timber Frame Project | Under Wood Construction</title>
-	<meta name="description" content="The Heritage Pavilion — a masterclass in traditional timber framing featuring hand-cut mortise and tenon joinery. Built by Under Wood Construction in Minnesota's Arrowhead Region." />
-	<meta property="og:title" content="The Heritage Pavilion | Under Wood Construction" />
-	<meta property="og:description" content="Traditional mortise and tenon joinery meets modern architectural design. A timber frame pavilion built in Minnesota." />
+	<title>Grand Marais Sauna | Under Wood Construction</title>
+	<meta name="description" content="A custom-built sauna on Minnesota's North Shore, designed for durability and relaxation in the Arrowhead Region's harsh climate. Built by Under Wood Construction." />
+	<meta property="og:title" content="Grand Marais Sauna | Under Wood Construction" />
+	<meta property="og:description" content="A custom-built sauna on Minnesota's North Shore, designed for durability and relaxation." />
 	<meta property="og:type" content="article" />
-	<meta property="og:image" content="https://underwoodconstruction.com/images/logo.jpg" />
+	<meta property="og:image" content="https://underwoodconstruction.com/images/project-3-sauna-exterior.jpg" />
 </svelte:head>
 
 <!-- Hero Section -->
 <section class="relative flex h-[70vh] w-full items-end md:h-[85vh]">
 	<img
-		alt="The Heritage Pavilion Finished Frame"
+		alt="Grand Marais Sauna Exterior"
 		class="absolute inset-0 h-full w-full object-cover contrast-[1.1] grayscale-[20%]"
 		style={heroTransition}
-		src="/images/project-8-pavillion-assembly.png"
+		src="/images/project-3-sauna-exterior.jpg"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-t from-forest-evergreen/80 to-transparent"></div>
 	<div class="relative mx-auto w-full max-w-container-max px-margin-mobile pb-16 md:px-gutter md:pb-24">
 		<div class="max-w-3xl">
-			<span class="mb-6 inline-block bg-harvest-oak px-3 py-1 text-[14px] font-semibold uppercase tracking-[0.1em] text-sapwood-cream">FEATURED PROJECT</span>
-			<h1 class="mb-4 font-serif text-[56px] font-bold leading-[64px] tracking-[-0.02em] text-sapwood-cream" >The Heritage Pavilion</h1>
+			<span class="mb-6 inline-block bg-harvest-oak px-3 py-1 text-[14px] font-semibold uppercase tracking-[0.1em] text-sapwood-cream">SMALL & SUSTAINABLE</span>
+			<h1 class="mb-4 font-serif text-[56px] font-bold leading-[64px] tracking-[-0.02em] text-sapwood-cream">Grand Marais Sauna</h1>
 			<div class="h-1 w-24 bg-harvest-oak"></div>
 		</div>
 	</div>
@@ -42,21 +42,21 @@
 				<Icon name="location_on" class="text-2xl text-harvest-oak" />
 				<div>
 					<p class="text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-on-surface-variant">Location</p>
-					<p class="font-serif text-[20px] font-semibold text-forest-evergreen">Underwood, MN</p>
+					<p class="font-serif text-[20px] font-semibold text-forest-evergreen">Grand Marais, MN</p>
 				</div>
 			</div>
 			<div class="flex items-center gap-4 md:border-x md:border-outline-variant md:px-8">
 				<Icon name="architecture" class="text-2xl text-harvest-oak" />
 				<div>
 					<p class="text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-on-surface-variant">Type</p>
-					<p class="font-serif text-[20px] font-semibold text-forest-evergreen">Timber Frame Structure</p>
+					<p class="font-serif text-[20px] font-semibold text-forest-evergreen">Custom Sauna</p>
 				</div>
 			</div>
 			<div class="flex items-center gap-4">
 				<Icon name="event_available" class="text-2xl text-harvest-oak" />
 				<div>
-					<p class="text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-on-surface-variant">Completion</p>
-					<p class="font-serif text-[20px] font-semibold text-forest-evergreen">2023</p>
+					<p class="text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-on-surface-variant">Category</p>
+					<p class="font-serif text-[20px] font-semibold text-forest-evergreen">Small & Sustainable</p>
 				</div>
 			</div>
 		</div>
@@ -68,24 +68,24 @@
 	<div class="mx-auto max-w-container-max px-margin-mobile md:px-gutter">
 		<div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
 			<div class="lg:col-span-5">
-				<h2 class="mb-8 font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">Structural Elegance Built for Generations</h2>
+				<h2 class="mb-8 font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">North Shore Warmth</h2>
 				<div class="space-y-6">
 					<p class="text-[18px] leading-7 text-on-surface-variant">
-						A masterclass in traditional timber framing and modern architectural design. This pavilion features hand-cut mortise and tenon joinery, sustainably sourced kiln-dried oak, and a radial roof assembly that stands as a testament to craftsmanship.
+						Built on Minnesota's North Shore near Grand Marais, this custom sauna was designed to withstand the region's extreme winters while providing a year-round retreat. The construction prioritizes thermal efficiency, moisture management, and natural materials that complement the surrounding boreal landscape.
 					</p>
 					<div class="flex flex-wrap gap-3">
-						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">TRADITIONAL JOINERY</span>
-						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">KILN-DRIED OAK</span>
-						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">CUSTOM DESIGN</span>
+						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">THERMAL EFFICIENCY</span>
+						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">NORTH SHORE</span>
+						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">NATURAL MATERIALS</span>
 					</div>
 				</div>
 			</div>
 			<div class="lg:col-span-7">
 				<div class="border border-outline-variant bg-base-100 p-2 shadow-sm">
 					<img
-						alt="The Radial Roof Assembly Under Construction"
+						alt="Grand Marais Sauna Alternate View"
 						class="aspect-[4/3] w-full object-cover"
-						src="/images/project-8-pavillion-prep.png"
+						src="/images/project-3-sauna-exterior-2.jpg"
 					/>
 				</div>
 			</div>
@@ -99,45 +99,42 @@
 		<div class="mb-12 flex items-end justify-between">
 			<div>
 				<p class="mb-2 text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-harvest-oak">PROJECT DOSSIER</p>
-				<h2 class="font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">The Craft in Detail</h2>
+				<h2 class="font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">The Build in Detail</h2>
 			</div>
 		</div>
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-			<!-- Gallery Item 1 -->
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
 					<img
-						alt="Traditional Mortise and Tenon Joinery Close-up"
+						alt="Sauna Exterior View"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-8-pavillion-prep.png"
+						src="/images/project-3-sauna-exterior.jpg"
 					/>
 				</div>
-				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Precision Joinery</h3>
-				<p class="text-[16px] leading-6 text-on-surface-variant/70">Hand-cut details ensuring structural longevity.</p>
+				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Exterior Design</h3>
+				<p class="text-[16px] leading-6 text-on-surface-variant/70">Built to endure Minnesota's harshest conditions.</p>
 			</div>
-			<!-- Gallery Item 2 -->
 			<div class="group cursor-pointer lg:translate-y-12">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
 					<img
-						alt="Timber Framing Radial Roof Structure"
+						alt="Sauna Exterior Alternate Angle"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-8-pavillion-assembly.png"
+						src="/images/project-3-sauna-exterior-2.jpg"
 					/>
 				</div>
-				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Radial Engineering</h3>
-				<p class="text-[16px] leading-6 text-on-surface-variant/70">A complex roof assembly showcasing old-world techniques.</p>
+				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Weather-Tight Construction</h3>
+				<p class="text-[16px] leading-6 text-on-surface-variant/70">Meticulous detailing for long-term durability.</p>
 			</div>
-			<!-- Gallery Item 3 -->
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
 					<img
-						alt="Heritage Pavilion Frame Standing High"
+						alt="Sauna Interior"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-8-pavillion-prep.png"
+						src="/images/project-3-sauna-interior.jpg"
 					/>
 				</div>
-				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Skeletal Integrity</h3>
-				<p class="text-[16px] leading-6 text-on-surface-variant/70">The finished frame standing proud in Underwood, MN.</p>
+				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Interior Warmth</h3>
+				<p class="text-[16px] leading-6 text-on-surface-variant/70">Natural wood finishes for the ultimate retreat.</p>
 			</div>
 		</div>
 	</div>
@@ -145,8 +142,8 @@
 
 <!-- Call to Action -->
 <CtaBanner
-	heading="Ready to Build Your Legacy?"
-	description="From custom pavilions to timber-framed luxury homes, we bring unrivaled craftsmanship to every project."
+	heading="Dreaming of a Custom Sauna?"
+	description="We build saunas and small structures designed to thrive in Minnesota's climate. Let's create your year-round retreat."
 >
 	<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
 		<a href="/#contact" class="btn btn-secondary rounded-none px-10 py-4 text-[14px] font-semibold uppercase tracking-[0.1em] text-sapwood-cream hover:bg-sapwood-cream hover:text-forest-evergreen">

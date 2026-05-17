@@ -11,7 +11,47 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
+		<loc>https://underwoodconstruction.com/projects/lakeside-timber-frame</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://underwoodconstruction.com/projects/rustic-shed</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://underwoodconstruction.com/projects/grand-marais-sauna</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://underwoodconstruction.com/projects/small-timber-frame-workshop</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://underwoodconstruction.com/projects/timber-frame-entry</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://underwoodconstruction.com/projects/timber-frame-raising</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://underwoodconstruction.com/projects/underwood-gambrel-remodel</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
 		<loc>https://underwoodconstruction.com/projects/heritage-pavilion</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.7</priority>
+	</url>
+	<url>
+		<loc>https://underwoodconstruction.com/projects/grand-marais-strawbale</loc>
 		<changefreq>monthly</changefreq>
 		<priority>0.7</priority>
 	</url>
