@@ -67,21 +67,24 @@
 	color: white;
 }
 
+/* Nav underline sliding animation */
 ::view-transition-group(nav-underline) {
 	animation-duration: 300ms;
 	animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-transition::view-transition-old(root),
-.nav-transition::view-transition-new(root) {
+/* Suppress full-page crossfade during nav-only transitions */
+:root:active-view-transition-type(nav-only)::view-transition-old(root),
+:root:active-view-transition-type(nav-only)::view-transition-new(root) {
 	animation: none;
 }
 
-:not(.nav-transition)::view-transition-old(root) {
+/* Full-page crossfade for page navigations */
+:root:active-view-transition-type(page)::view-transition-old(root) {
 	animation: 150ms ease-out both fade-out;
 }
 
-:not(.nav-transition)::view-transition-new(root) {
+:root:active-view-transition-type(page)::view-transition-new(root) {
 	animation: 200ms ease-in 100ms both fade-in;
 }
 

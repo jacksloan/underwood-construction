@@ -9,10 +9,15 @@
 
 	onNavigate((navigation) => {
 		if (!document.startViewTransition) return;
+		// Skip full-page transition for same-page navigations (hash changes only)
+		if (navigation.from?.url.pathname === navigation.to?.url.pathname) return;
 		return new Promise((resolve) => {
-			document.startViewTransition(async () => {
-				resolve();
-				await navigation.complete;
+			document.startViewTransition({
+				update: async () => {
+					resolve();
+					await navigation.complete;
+				},
+				types: ['page']
 			});
 		});
 	});

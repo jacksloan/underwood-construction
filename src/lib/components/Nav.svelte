@@ -23,12 +23,9 @@
 		debounceTimer = setTimeout(() => {
 			if (hash === activeHash) return;
 			if (document.startViewTransition) {
-				document.documentElement.classList.add('nav-transition');
-				const t = document.startViewTransition(() => {
-					activeHash = hash;
-				});
-				t.finished.then(() => {
-					document.documentElement.classList.remove('nav-transition');
+				document.startViewTransition({
+					update: () => { activeHash = hash; },
+					types: ['nav-only']
 				});
 			} else {
 				activeHash = hash;
@@ -42,8 +39,11 @@
 			const linkPath = linkHref.split('#')[0];
 			return linkPath !== '/' && pathname.startsWith(linkPath);
 		}
-		if (activeHash) {
-			if (linkHref.includes('#')) return linkHref.split('#')[1] === activeHash;
+		// Use activeHash from observer, but fall back to the URL hash immediately
+		// so we don't flash "Home" before the observer/effect catches up
+		const currentHash = activeHash || page.url.hash?.replace('#', '') || '';
+		if (currentHash) {
+			if (linkHref.includes('#')) return linkHref.split('#')[1] === currentHash;
 			return false;
 		}
 		return linkHref === '/';
@@ -83,7 +83,15 @@
 		const unsubscribe = $effect.root(() => {
 			$effect(() => {
 				const _pathname = page.url.pathname;
+				const _hash = page.url.hash;
 				if (_pathname === '/') {
+					// If arriving with a hash (e.g. from /projects to /#about),
+					// set it immediately so the underline jumps straight there
+					const target = _hash?.replace('#', '') || '';
+					if (target && sectionIds.includes(target)) {
+						if (debounceTimer) clearTimeout(debounceTimer);
+						activeHash = target;
+					}
 					requestAnimationFrame(() => observeSections());
 				} else {
 					if (debounceTimer) clearTimeout(debounceTimer);
