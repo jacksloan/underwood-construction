@@ -5,8 +5,6 @@
 
 	const slug = $derived(page.url.pathname.replace(/\//g, '-').replace(/^-/, ''));
 	const heroTransition = $derived(`view-transition-name: ${slug}`);
-	const titleTransition = $derived(`view-transition-name: ${slug}-title`);
-	const descTransition = $derived(`view-transition-name: ${slug}-desc`);
 </script>
 
 <svelte:head>
@@ -15,7 +13,7 @@
 </svelte:head>
 
 <!-- Hero Section -->
-<section class="relative flex h-[70vh] w-full items-end overflow-hidden md:h-[85vh]">
+<section class="relative flex h-[70vh] w-full items-end md:h-[85vh]">
 	<img
 		alt="The Heritage Pavilion Finished Frame"
 		class="absolute inset-0 h-full w-full object-cover contrast-[1.1] grayscale-[20%]"
@@ -26,7 +24,7 @@
 	<div class="relative mx-auto w-full max-w-container-max px-margin-mobile pb-16 md:px-gutter md:pb-24">
 		<div class="max-w-3xl">
 			<span class="mb-6 inline-block bg-harvest-oak px-3 py-1 text-[14px] font-semibold uppercase tracking-[0.1em] text-sapwood-cream">FEATURED PROJECT</span>
-			<h1 class="mb-4 font-serif text-[56px] font-bold leading-[64px] tracking-[-0.02em] text-sapwood-cream" style={titleTransition}>The Heritage Pavilion</h1>
+			<h1 class="mb-4 font-serif text-[56px] font-bold leading-[64px] tracking-[-0.02em] text-sapwood-cream" >The Heritage Pavilion</h1>
 			<div class="h-1 w-24 bg-harvest-oak"></div>
 		</div>
 	</div>
@@ -68,7 +66,7 @@
 			<div class="lg:col-span-5">
 				<h2 class="mb-8 font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">Structural Elegance Built for Generations</h2>
 				<div class="space-y-6">
-					<p class="text-[18px] leading-7 text-on-surface-variant" style={descTransition}>
+					<p class="text-[18px] leading-7 text-on-surface-variant">
 						A masterclass in traditional timber framing and modern architectural design. This pavilion features hand-cut mortise and tenon joinery, sustainably sourced kiln-dried oak, and a radial roof assembly that stands as a testament to craftsmanship.
 					</p>
 					<div class="flex flex-wrap gap-3">

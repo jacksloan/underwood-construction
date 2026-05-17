@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { onNavigate, afterNavigate } from '$app/navigation';
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
@@ -29,7 +28,7 @@
 	});
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head><link rel="icon" href="/images/logo.jpg" /></svelte:head>
 
 <div class="flex min-h-screen flex-col bg-base-100 font-sans text-base-content">
 	<Nav />
