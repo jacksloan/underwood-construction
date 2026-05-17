@@ -1,12 +1,23 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 	import { page } from '$app/state';
+	import { afterNavigate } from '$app/navigation';
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Nav from '$lib/components/Nav.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 
 	let { children } = $props();
+
+	afterNavigate(() => {
+		const hash = window.location.hash;
+		if (!hash) return;
+		// Wait for the fade-in to start so the target element exists in the DOM
+		setTimeout(() => {
+			const el = document.querySelector(hash);
+			el?.scrollIntoView({ behavior: 'smooth' });
+		}, 200);
+	});
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
