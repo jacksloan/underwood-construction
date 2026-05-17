@@ -104,7 +104,8 @@
 <!-- Desktop Header -->
 <header class="navbar sticky top-0 z-50 border-b border-outline-variant bg-base-100 px-margin-mobile md:px-gutter">
 	<div class="mx-auto flex h-20 w-full max-w-container-max items-center justify-between">
-		<a href="/" class="flex items-center gap-4">
+		<a href="/" class="flex items-center gap-3">
+			<img src="/images/logo.jpg" alt="Under Wood Construction logo" class="h-10 w-auto" />
 			<span class="font-serif text-[28px] font-bold leading-9 text-forest-evergreen">Under Wood Construction</span>
 		</a>
 
