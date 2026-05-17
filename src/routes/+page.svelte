@@ -36,17 +36,17 @@
 	<div class="relative z-10 mx-auto flex min-h-[90vh] max-w-container-max items-center px-margin-mobile py-section-gap-md md:px-gutter">
 		<div class="max-w-3xl">
 			<span class="badge badge-secondary mb-6 rounded-none px-4 py-1 text-[14px] font-semibold uppercase tracking-[0.1em]">ESTABLISHED CRAFTSMANSHIP</span>
-			<h1 class="mb-8 font-serif text-[56px] font-bold leading-[64px] tracking-[-0.02em] text-sapwood-cream">
+			<h1 class="mb-8 font-serif text-[32px] font-bold leading-[40px] tracking-[-0.02em] text-sapwood-cream md:text-[56px] md:leading-[64px]">
 				DEVOTED TO CRAFTSMANSHIP AND CUSTOMER SERVICE
 			</h1>
 			<p class="mb-10 max-w-xl text-[18px] leading-7 text-sapwood-cream/90">
 				Precision-built homes and monumental timber structures designed for longevity, heritage, and unparalleled quality in every joint.
 			</p>
 			<div class="flex flex-col gap-4 sm:flex-row">
-				<a href="#contact" class="btn btn-secondary rounded-none border-secondary px-10 py-4 text-[14px] font-semibold uppercase tracking-[0.1em] hover:bg-forest-evergreen">
+				<a href="#contact" class="btn btn-secondary rounded-none border-secondary px-6 py-4 text-[14px] font-semibold uppercase tracking-[0.1em] hover:bg-forest-evergreen sm:px-10">
 					GET A QUOTE
 				</a>
-				<a href="#services" class="btn btn-outline rounded-none border-sapwood-cream px-10 py-4 text-[14px] font-semibold uppercase tracking-[0.1em] text-sapwood-cream hover:bg-sapwood-cream hover:text-forest-evergreen">
+				<a href="#services" class="btn btn-outline rounded-none border-sapwood-cream px-6 py-4 text-[14px] font-semibold uppercase tracking-[0.1em] text-sapwood-cream hover:bg-sapwood-cream hover:text-forest-evergreen sm:px-10">
 					VIEW SERVICES
 				</a>
 			</div>
@@ -60,7 +60,7 @@
 		<div class="mb-16 flex flex-col justify-between gap-6 md:flex-row md:items-end">
 			<div>
 				<span class="mb-2 block text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-harvest-oak">OUR EXPERTISE</span>
-				<h2 class="font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">Specialized Construction Services</h2>
+				<h2 class="font-serif text-[28px] font-semibold leading-[36px] text-forest-evergreen md:text-[40px] md:leading-[48px]">Specialized Construction Services</h2>
 			</div>
 			<p class="max-w-md text-[16px] leading-6 text-on-surface-variant">
 				From foundational integrity to the final architectural flourish, we bring technical excellence to every phase of your build.
@@ -149,7 +149,7 @@
 			</div>
 			<div class="lg:col-span-7">
 				<span class="mb-4 block text-[14px] font-semibold uppercase tracking-widest text-harvest-oak">The Firm</span>
-				<h2 class="mb-8 font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">Committed to Professional Excellence</h2>
+				<h2 class="mb-8 font-serif text-[28px] font-semibold leading-[36px] text-forest-evergreen md:text-[40px] md:leading-[48px]">Committed to Professional Excellence</h2>
 				<div class="space-y-6">
 					<p class="text-[18px] leading-relaxed text-on-surface-variant">
 						Under Wood Construction is a fully licensed and insured construction company. Our top priorities are customer service and satisfaction. We aim for quality and excellence in all of the work we do.
