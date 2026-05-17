@@ -1,6 +1,12 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import Icon from '$lib/components/Icon.svelte';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
+
+	const slug = $derived(page.url.pathname.replace(/\//g, '-').replace(/^-/, ''));
+	const heroTransition = $derived(`view-transition-name: ${slug}`);
+	const titleTransition = $derived(`view-transition-name: ${slug}-title`);
+	const descTransition = $derived(`view-transition-name: ${slug}-desc`);
 </script>
 
 <svelte:head>
@@ -13,14 +19,14 @@
 	<img
 		alt="The Heritage Pavilion Finished Frame"
 		class="absolute inset-0 h-full w-full object-cover contrast-[1.1] grayscale-[20%]"
-		style="view-transition-name: project-heritage-pavilion"
+		style={heroTransition}
 		src="https://lh3.googleusercontent.com/aida/ADBb0uj3TAgU5cFpd3BZ4cP6UwbGr5kLKDn0BQMGOKgerOyDDJkBzU5B7mx819gZ1uTAwT2CUHCC5KpEJGDR_5xN77xSb-AIrwecqKxbjOiarABtc2lySdwXL0pZkRgu_u451DytN3BbZdrbMiimABHHM4s2DQJ8-5QlXmN8u8WnUifpP3pM8SCEtLVcgJAQdtWIpZdrMO9oqPhFVeynoecb4os67At4DnaweLuWcc98XaQ5ZlQbeF5z6le-8e8"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-t from-forest-evergreen/80 to-transparent"></div>
 	<div class="relative mx-auto w-full max-w-container-max px-margin-mobile pb-16 md:px-gutter md:pb-24">
 		<div class="max-w-3xl">
 			<span class="mb-6 inline-block bg-harvest-oak px-3 py-1 text-[14px] font-semibold uppercase tracking-[0.1em] text-sapwood-cream">FEATURED PROJECT</span>
-			<h1 class="mb-4 font-serif text-[56px] font-bold leading-[64px] tracking-[-0.02em] text-sapwood-cream">The Heritage Pavilion</h1>
+			<h1 class="mb-4 font-serif text-[56px] font-bold leading-[64px] tracking-[-0.02em] text-sapwood-cream" style={titleTransition}>The Heritage Pavilion</h1>
 			<div class="h-1 w-24 bg-harvest-oak"></div>
 		</div>
 	</div>
@@ -62,7 +68,7 @@
 			<div class="lg:col-span-5">
 				<h2 class="mb-8 font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">Structural Elegance Built for Generations</h2>
 				<div class="space-y-6">
-					<p class="text-[18px] leading-7 text-on-surface-variant">
+					<p class="text-[18px] leading-7 text-on-surface-variant" style={descTransition}>
 						A masterclass in traditional timber framing and modern architectural design. This pavilion features hand-cut mortise and tenon joinery, sustainably sourced kiln-dried oak, and a radial roof assembly that stands as a testament to craftsmanship.
 					</p>
 					<div class="flex flex-wrap gap-3">
