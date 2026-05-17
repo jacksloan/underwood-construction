@@ -8,10 +8,10 @@
 </script>
 
 <svelte:head>
-	<title>Grand Marais Sauna | Under Wood Construction</title>
-	<meta name="description" content="A custom-built sauna on Minnesota's North Shore, designed for durability and relaxation in the Arrowhead Region's harsh climate. Built by Under Wood Construction." />
-	<meta property="og:title" content="Grand Marais Sauna | Under Wood Construction" />
-	<meta property="og:description" content="A custom-built sauna on Minnesota's North Shore, designed for durability and relaxation." />
+	<title>Leech Lake Sauna | Under Wood Construction</title>
+	<meta name="description" content="A custom-built sauna near Leech Lake, Minnesota, designed for durability and relaxation in Minnesota's harsh climate. Built by Under Wood Construction." />
+	<meta property="og:title" content="Leech Lake Sauna | Under Wood Construction" />
+	<meta property="og:description" content="A custom-built sauna near Leech Lake, Minnesota, designed for durability and relaxation." />
 	<meta property="og:type" content="article" />
 	<meta property="og:image" content="https://underwoodconstruction.com/images/project-3-sauna-exterior.jpg" />
 </svelte:head>
@@ -19,7 +19,7 @@
 <!-- Hero Section -->
 <section class="relative flex h-[70vh] w-full items-end md:h-[85vh]">
 	<img
-		alt="Grand Marais Sauna Exterior"
+		alt="Leech Lake Sauna Exterior"
 		class="absolute inset-0 h-full w-full object-cover contrast-[1.1] grayscale-[20%]"
 		style={heroTransition}
 		src="/images/project-3-sauna-exterior.jpg"
@@ -28,7 +28,7 @@
 	<div class="relative mx-auto w-full max-w-container-max px-margin-mobile pb-16 md:px-gutter md:pb-24">
 		<div class="max-w-3xl">
 			<span class="mb-6 inline-block bg-harvest-oak px-3 py-1 text-[14px] font-semibold uppercase tracking-[0.1em] text-sapwood-cream">SMALL & SUSTAINABLE</span>
-			<h1 class="mb-4 font-serif text-[56px] font-bold leading-[64px] tracking-[-0.02em] text-sapwood-cream">Grand Marais Sauna</h1>
+			<h1 class="mb-4 font-serif text-[56px] font-bold leading-[64px] tracking-[-0.02em] text-sapwood-cream">Leech Lake Sauna</h1>
 			<div class="h-1 w-24 bg-harvest-oak"></div>
 		</div>
 	</div>
@@ -42,7 +42,7 @@
 				<Icon name="location_on" class="text-2xl text-harvest-oak" />
 				<div>
 					<p class="text-[14px] font-semibold uppercase leading-5 tracking-[0.1em] text-on-surface-variant">Location</p>
-					<p class="font-serif text-[20px] font-semibold text-forest-evergreen">Grand Marais, MN</p>
+					<p class="font-serif text-[20px] font-semibold text-forest-evergreen">Leech Lake, MN</p>
 				</div>
 			</div>
 			<div class="flex items-center gap-4 md:border-x md:border-outline-variant md:px-8">
@@ -68,14 +68,14 @@
 	<div class="mx-auto max-w-container-max px-margin-mobile md:px-gutter">
 		<div class="grid grid-cols-1 items-start gap-12 lg:grid-cols-12">
 			<div class="lg:col-span-5">
-				<h2 class="mb-8 font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">North Shore Warmth</h2>
+				<h2 class="mb-8 font-serif text-[40px] font-semibold leading-[48px] text-forest-evergreen">Lakeside Warmth</h2>
 				<div class="space-y-6">
 					<p class="text-[18px] leading-7 text-on-surface-variant">
-						Built on Minnesota's North Shore near Grand Marais, this custom sauna was designed to withstand the region's extreme winters while providing a year-round retreat. The construction prioritizes thermal efficiency, moisture management, and natural materials that complement the surrounding boreal landscape.
+						Built near Leech Lake in central Minnesota, this custom sauna was designed to withstand the region's extreme winters while providing a year-round retreat. The construction prioritizes thermal efficiency, moisture management, and natural materials that complement the surrounding lake country landscape.
 					</p>
 					<div class="flex flex-wrap gap-3">
 						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">THERMAL EFFICIENCY</span>
-						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">NORTH SHORE</span>
+						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">LEECH LAKE</span>
 						<span class="rounded-full bg-forest-evergreen/5 px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.1em] text-forest-evergreen">NATURAL MATERIALS</span>
 					</div>
 				</div>
@@ -83,7 +83,7 @@
 			<div class="lg:col-span-7">
 				<div class="border border-outline-variant bg-base-100 p-2 shadow-sm">
 					<img
-						alt="Grand Marais Sauna Alternate View"
+						alt="Leech Lake Sauna Alternate View"
 						class="aspect-[4/3] w-full object-cover"
 						src="/images/project-3-sauna-exterior-2.jpg"
 					/>
@@ -112,7 +112,7 @@
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Exterior Design</h3>
-				<p class="text-[16px] leading-6 text-on-surface-variant/70">Built to endure Minnesota's harshest conditions.</p>
+				<p class="text-[16px] leading-6 text-on-surface-variant/70">Built to endure Minnesota's harshest winters.</p>
 			</div>
 			<div class="group cursor-pointer lg:translate-y-12">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">

@@ -4,6 +4,107 @@
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
 	import CtaBanner from '$lib/components/CtaBanner.svelte';
 
+	type Project = {
+		category: string;
+		title: string;
+		description: string;
+		image: string;
+		href: string;
+		icon?: string;
+		variant?: 'default' | 'portrait' | 'horizontal';
+		bg?: string;
+		colSpan: string;
+	};
+
+	const projects: Project[] = [
+		{
+			category: 'TIMBER FRAME STRUCTURES',
+			title: 'The Heritage Pavilion',
+			description: 'Traditional mortise and tenon joinery meets modern architectural design. A masterclass in structural integrity and aesthetic warmth.',
+			image: '/images/project-8-pavillion-assembly.png',
+			icon: 'architecture',
+			href: '/projects/heritage-pavilion',
+			colSpan: 'md:col-span-8'
+		},
+		{
+			category: 'NEW CONSTRUCTION',
+			title: 'Grand Marais Strawbale Home',
+			description: "A sustainable new build combining strawbale insulation with modern construction techniques on Minnesota's North Shore.",
+			image: '/images/project-9-south-east.jpeg',
+			href: '/projects/grand-marais-strawbale',
+			variant: 'portrait',
+			bg: 'bg-surface-container',
+			colSpan: 'md:col-span-4'
+		},
+		{
+			category: 'TIMBER FRAME STRUCTURES',
+			title: 'Lakeside Timber Frame',
+			description: 'A stunning lakeside timber frame celebrating the raw beauty of hand-finished beams and traditional joinery.',
+			image: '/images/project-1-lakeside-timberframe.png',
+			href: '/projects/lakeside-timber-frame',
+			variant: 'portrait',
+			bg: 'bg-surface-container-high',
+			colSpan: 'md:col-span-4'
+		},
+		{
+			category: 'REMODELING',
+			title: 'Underwood Gambrel Remodel',
+			description: 'A full-scale renovation of a classic gambrel-style home, modernizing systems while preserving its original character.',
+			image: '/images/project-7-underwood-gambrel-remodel.jpg',
+			href: '/projects/underwood-gambrel-remodel',
+			variant: 'horizontal',
+			colSpan: 'md:col-span-8'
+		},
+		{
+			category: 'SMALL & SUSTAINABLE',
+			title: 'Leech Lake Sauna',
+			description: 'A custom-built sauna near Leech Lake, designed for durability and relaxation in Minnesota\'s harsh climate.',
+			image: '/images/project-3-sauna-exterior.jpg',
+			href: '/projects/leech-lake-sauna',
+			variant: 'portrait',
+			colSpan: 'md:col-span-4'
+		},
+		{
+			category: 'TIMBER FRAME STRUCTURES',
+			title: 'Timber Frame Raising',
+			description: 'The dramatic moment a timber frame comes together — massive beams lifted into place through teamwork and precision engineering.',
+			image: '/images/project-6-timber-frame-raising.png',
+			href: '/projects/timber-frame-raising',
+			variant: 'horizontal',
+			bg: 'bg-surface-container',
+			colSpan: 'md:col-span-8'
+		},
+		{
+			category: 'SMALL & SUSTAINABLE',
+			title: 'Rustic Shed',
+			description: 'A compact, functional outbuilding built with reclaimed materials and traditional craftsmanship.',
+			image: '/images/project-2-rustic-shed.jpg',
+			href: '/projects/rustic-shed',
+			variant: 'portrait',
+			bg: 'bg-surface-container-high',
+			colSpan: 'md:col-span-4'
+		},
+		{
+			category: 'TIMBER FRAME STRUCTURES',
+			title: 'Timber Frame Entry',
+			description: 'A grand timber frame entryway that sets the tone for the entire home with exposed beams and expert joinery.',
+			image: '/images/project-5-timber-frame-entry.png',
+			href: '/projects/timber-frame-entry',
+			variant: 'portrait',
+			colSpan: 'md:col-span-4'
+		},
+		{
+			category: 'TIMBER FRAME STRUCTURES',
+			title: 'Small Timber Frame Workshop',
+			description: 'A purpose-built workshop featuring exposed timber framing and practical design for the working craftsman.',
+			image: '/images/project-4-small-timberframe-workshop.jpg',
+			href: '/projects/small-timber-frame-workshop',
+			variant: 'portrait',
+			bg: 'bg-surface-container',
+			colSpan: 'md:col-span-4'
+		}
+	];
+
 	const filters = [
 		'All Projects',
 		'Timber Frame Structures',
@@ -14,6 +115,12 @@
 
 	let activeFilter = $state('All Projects');
 	let animating = $state(false);
+
+	const filteredProjects = $derived(
+		activeFilter === 'All Projects'
+			? projects
+			: projects.filter((p) => p.category === activeFilter.toUpperCase())
+	);
 
 	function setFilter(filter: string) {
 		if (filter === activeFilter) return;
@@ -57,118 +164,20 @@
 
 		<!-- Bento-style Grid -->
 		<div class="grid grid-cols-1 gap-8 transition-opacity duration-300 md:grid-cols-12" class:opacity-30={animating}>
-			<!-- Project 8: Heritage Pavilion -->
-			<div class="md:col-span-8">
-				<ProjectCard
-					category="TIMBER FRAME STRUCTURES"
-					title="The Heritage Pavilion"
-					description="Traditional mortise and tenon joinery meets modern architectural design. A masterclass in structural integrity and aesthetic warmth."
-					image="/images/project-8-pavillion-assembly.png"
-					icon="architecture"
-					href="/projects/heritage-pavilion"
-				/>
-			</div>
-
-			<!-- Project 9: Grand Marais Strawbale Home -->
-			<div class="md:col-span-4">
-				<ProjectCard
-					variant="portrait"
-					bg="bg-surface-container"
-					category="NEW CONSTRUCTION"
-					title="Grand Marais Strawbale Home"
-					description="A sustainable new build combining strawbale insulation with modern construction techniques on Minnesota's North Shore."
-					image="/images/project-9-south-east.jpeg"
-					href="/projects/grand-marais-strawbale"
-				/>
-			</div>
-
-			<!-- Project 1: Lakeside Timber Frame -->
-			<div class="md:col-span-4">
-				<ProjectCard
-					variant="portrait"
-					bg="bg-surface-container-high"
-					category="TIMBER FRAME STRUCTURES"
-					title="Lakeside Timber Frame"
-					description="A stunning lakeside timber frame celebrating the raw beauty of hand-finished beams and traditional joinery."
-					image="/images/project-1-lakeside-timberframe.png"
-					href="/projects/lakeside-timber-frame"
-				/>
-			</div>
-
-			<!-- Project 7: Underwood Gambrel Remodel -->
-			<div class="md:col-span-8">
-				<ProjectCard
-					variant="horizontal"
-					category="REMODELING"
-					title="Underwood Gambrel Remodel"
-					description="A full-scale renovation of a classic gambrel-style home, modernizing systems while preserving its original character."
-					image="/images/project-7-underwood-gambrel-remodel.jpg"
-					href="/projects/underwood-gambrel-remodel"
-				/>
-			</div>
-
-			<!-- Project 3: Grand Marais Sauna -->
-			<div class="md:col-span-4">
-				<ProjectCard
-					variant="portrait"
-					category="SMALL & SUSTAINABLE"
-					title="Grand Marais Sauna"
-					description="A custom-built sauna on the North Shore, designed for durability and relaxation in Minnesota's harsh climate."
-					image="/images/project-3-sauna-exterior.jpg"
-					href="/projects/grand-marais-sauna"
-				/>
-			</div>
-
-			<!-- Project 6: Timber Frame Raising -->
-			<div class="md:col-span-8">
-				<ProjectCard
-					variant="horizontal"
-					bg="bg-surface-container"
-					category="TIMBER FRAME STRUCTURES"
-					title="Timber Frame Raising"
-					description="The dramatic moment a timber frame comes together — massive beams lifted into place through teamwork and precision engineering."
-					image="/images/project-6-timber-frame-raising.png"
-					href="/projects/timber-frame-raising"
-				/>
-			</div>
-
-			<!-- Project 2: Rustic Shed -->
-			<div class="md:col-span-4">
-				<ProjectCard
-					variant="portrait"
-					bg="bg-surface-container-high"
-					category="SMALL & SUSTAINABLE"
-					title="Rustic Shed"
-					description="A compact, functional outbuilding built with reclaimed materials and traditional craftsmanship."
-					image="/images/project-2-rustic-shed.jpg"
-					href="/projects/rustic-shed"
-				/>
-			</div>
-
-			<!-- Project 5: Timber Frame Entry -->
-			<div class="md:col-span-4">
-				<ProjectCard
-					variant="portrait"
-					category="TIMBER FRAME STRUCTURES"
-					title="Timber Frame Entry"
-					description="A grand timber frame entryway that sets the tone for the entire home with exposed beams and expert joinery."
-					image="/images/project-5-timber-frame-entry.png"
-					href="/projects/timber-frame-entry"
-				/>
-			</div>
-
-			<!-- Project 4: Small Timber Frame Workshop -->
-			<div class="md:col-span-4">
-				<ProjectCard
-					variant="portrait"
-					bg="bg-surface-container"
-					category="TIMBER FRAME STRUCTURES"
-					title="Small Timber Frame Workshop"
-					description="A purpose-built workshop featuring exposed timber framing and practical design for the working craftsman."
-					image="/images/project-4-small-timberframe-workshop.jpg"
-					href="/projects/small-timber-frame-workshop"
-				/>
-			</div>
+			{#each filteredProjects as project (project.href)}
+				<div class="{project.colSpan}">
+					<ProjectCard
+						category={project.category}
+						title={project.title}
+						description={project.description}
+						image={project.image}
+						href={project.href}
+						icon={project.icon}
+						variant={project.variant}
+						bg={project.bg}
+					/>
+				</div>
+			{/each}
 		</div>
 	</div>
 </section>
