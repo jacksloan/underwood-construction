@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	import { onMount, tick } from 'svelte';
+	import { onMount } from 'svelte';
 	import Icon from './Icon.svelte';
 
 	let mobileOpen = $state(false);
@@ -18,56 +18,36 @@
 
 	const sectionIds = ['services', 'about', 'contact'];
 
-	// Sliding underline state
-	let navEl: HTMLElement | undefined = $state();
-	let linkEls: HTMLAnchorElement[] = $state([]);
-	let underlineLeft = $state(0);
-	let underlineWidth = $state(0);
-	let underlineVisible = $state(false);
-	let hasInitialized = false;
-
 	function setActiveHash(hash: string) {
 		if (debounceTimer) clearTimeout(debounceTimer);
 		debounceTimer = setTimeout(() => {
-			activeHash = hash;
+			if (hash === activeHash) return;
+			if (document.startViewTransition) {
+				document.documentElement.classList.add('nav-transition');
+				const t = document.startViewTransition(() => {
+					activeHash = hash;
+				});
+				t.finished.then(() => {
+					document.documentElement.classList.remove('nav-transition');
+				});
+			} else {
+				activeHash = hash;
+			}
 		}, DEBOUNCE_MS);
 	}
 
-	function getActiveIndex(): number {
+	function isActive(linkHref: string): boolean {
 		const pathname = page.url.pathname;
 		if (pathname !== '/') {
-			return links.findIndex((l) => {
-				const linkPath = l.href.split('#')[0];
-				return linkPath !== '/' && pathname.startsWith(linkPath);
-			});
+			const linkPath = linkHref.split('#')[0];
+			return linkPath !== '/' && pathname.startsWith(linkPath);
 		}
 		if (activeHash) {
-			return links.findIndex((l) => l.href.includes('#') && l.href.split('#')[1] === activeHash);
+			if (linkHref.includes('#')) return linkHref.split('#')[1] === activeHash;
+			return false;
 		}
-		return 0; // Home
+		return linkHref === '/';
 	}
-
-	function updateUnderline() {
-		const idx = getActiveIndex();
-		const el = linkEls[idx];
-		if (!el || !navEl) {
-			underlineVisible = false;
-			return;
-		}
-		const navRect = navEl.getBoundingClientRect();
-		const elRect = el.getBoundingClientRect();
-		underlineLeft = elRect.left - navRect.left;
-		underlineWidth = elRect.width;
-		underlineVisible = true;
-	}
-
-	$effect(() => {
-		// Re-run whenever activeHash or pathname changes
-		void activeHash;
-		void page.url.pathname;
-		if (!hasInitialized) return;
-		tick().then(updateUnderline);
-	});
 
 	function closeMobile() {
 		mobileOpen = false;
@@ -100,15 +80,6 @@
 
 		observeSections();
 
-		// Initial position without transition
-		requestAnimationFrame(() => {
-			updateUnderline();
-			hasInitialized = true;
-		});
-
-		const onResize = () => updateUnderline();
-		window.addEventListener('resize', onResize);
-
 		const unsubscribe = $effect.root(() => {
 			$effect(() => {
 				const _pathname = page.url.pathname;
@@ -126,7 +97,6 @@
 			if (debounceTimer) clearTimeout(debounceTimer);
 			observer.disconnect();
 			unsubscribe();
-			window.removeEventListener('resize', onResize);
 		};
 	});
 </script>
@@ -139,25 +109,17 @@
 		</a>
 
 		<!-- Desktop Nav -->
-		<nav bind:this={navEl} class="relative hidden items-center gap-8 md:flex">
-			{#each links as link, i}
-				{@const active = getActiveIndex() === i}
+		<nav class="relative hidden items-center gap-8 md:flex">
+			{#each links as link}
+				{@const active = isActive(link.href)}
 				<a
-					bind:this={linkEls[i]}
 					href={link.href}
-					class="pb-1 text-[15px] font-medium leading-6 tracking-[0.05em] font-sans transition-colors duration-200
-						{active ? 'text-accent' : 'text-forest-evergreen hover:text-harvest-oak'}"
+					class="nav-link relative pb-1 text-[15px] font-medium leading-6 tracking-[0.05em] font-sans transition-colors duration-200
+						{active ? 'text-accent is-active' : 'text-forest-evergreen hover:text-harvest-oak'}"
 				>
 					{link.label}
 				</a>
 			{/each}
-			<!-- Sliding underline -->
-			<span
-				class="pointer-events-none absolute bottom-0 h-[2px] bg-secondary"
-				class:opacity-0={!underlineVisible}
-				class:opacity-100={underlineVisible}
-				style="left: {underlineLeft}px; width: {underlineWidth}px; transition: left 300ms cubic-bezier(0.4, 0, 0.2, 1), width 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 200ms;"
-			></span>
 		</nav>
 
 		<a
@@ -195,3 +157,32 @@
 		{/each}
 	</div>
 {/if}
+
+<style>
+	:global(.nav-link) {
+		position: relative;
+	}
+
+	:global(.nav-link)::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background-color: var(--color-secondary);
+		scale: 0 1;
+	}
+
+	:global(.nav-link.is-active)::after {
+		scale: 1 1;
+		view-transition-name: nav-underline;
+	}
+
+	::view-transition-old(nav-underline),
+	::view-transition-new(nav-underline) {
+		animation-duration: 300ms;
+		animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		height: 100%;
+	}
+</style>

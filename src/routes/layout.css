@@ -67,11 +67,21 @@
 	color: white;
 }
 
-::view-transition-old(root) {
+::view-transition-group(nav-underline) {
+	animation-duration: 300ms;
+	animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-transition::view-transition-old(root),
+.nav-transition::view-transition-new(root) {
+	animation: none;
+}
+
+:not(.nav-transition)::view-transition-old(root) {
 	animation: 150ms ease-out both fade-out;
 }
 
-::view-transition-new(root) {
+:not(.nav-transition)::view-transition-new(root) {
 	animation: 200ms ease-in 100ms both fade-in;
 }
 
