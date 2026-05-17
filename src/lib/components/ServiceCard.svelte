@@ -38,6 +38,7 @@
 				</a>
 			{/if}
 		</div>
+		{@render children?.()}
 		<div class="absolute bottom-[-10%] right-[-5%] opacity-10 transition-opacity duration-500 group-hover:opacity-20">
 			<Icon name="architecture" class="text-[200px]" />
 		</div>

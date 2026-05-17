@@ -75,7 +75,15 @@
 					description="From foundations to finishes, Under Wood Construction is equipped to tackle your project from the ground up. We build beautiful, functional homes with a focus on structural permanence."
 					ctaLabel="INQUIRE ABOUT BUILDS"
 					ctaHref="#contact"
-				/>
+				>
+					<div class="overflow-hidden my-4">
+						<img
+							alt="Modern clean interior finishes"
+							class="w-full transition-transform duration-700 hover:scale-105"
+							src="/images/project-9-studio.jpeg"
+						/>
+					</div>
+				</ServiceCard>
 			</div>
 			<!-- Service 2: Remodeling -->
 			<div class="md:col-span-5">
@@ -87,7 +95,7 @@
 				>
 					<img
 						alt="Remodeling detail work"
-						class="h-48 w-full object-cover brightness-75 grayscale transition-all duration-700 hover:grayscale-0"
+						class="h-48 w-full object-cover brightness-75 grayscale transition-all duration-700 hover:grayscale-0 hover:brightness-100"
 						src="/images/project-7-underwood-gambrel-remodel.jpg"
 					/>
 				</ServiceCard>
