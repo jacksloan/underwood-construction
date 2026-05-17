@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+	<meta charset="utf-8"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<title>Heritage Pavilion | Under Wood Construction</title>
+	<!-- Material Symbols -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+	<script id="tailwind-config">
+		tailwind.config = {
+			darkMode: "class",
+			theme: {
+				extend: {
+					"colors": {
+						"on-error": "#ffffff",
+						"surface-container-low": "#f5f3f0",
+						"primary-container": "#1b3022",
+						"on-tertiary-container": "#b0898c",
+						"surface-container": "#efeeeb",
+						"charcoal-etch": "#121212",
+						"background": "#fbf9f6",
+						"secondary": "#855321",
+						"primary-fixed": "#d0e9d4",
+						"outline-variant": "#c3c8c1",
+						"on-surface-variant": "#434843",
+						"tertiary-container": "#3f2427",
+						"primary": "#061b0e",
+						"surface": "#fbf9f6",
+						"on-error-container": "#93000a",
+						"on-tertiary-fixed": "#2d1417",
+						"on-secondary-fixed-variant": "#693c0a",
+						"surface-container-lowest": "#ffffff",
+						"on-surface": "#1b1c1a",
+						"secondary-container": "#ffbb80",
+						"inverse-primary": "#b4cdb8",
+						"outline": "#737973",
+						"on-primary": "#ffffff",
+						"on-secondary-fixed": "#2e1500",
+						"secondary-fixed": "#ffdcc1",
+						"surface-variant": "#e3e2e0",
+						"surface-tint": "#4d6453",
+						"inverse-on-surface": "#f2f1ee",
+						"tertiary": "#271013",
+						"on-tertiary-fixed-variant": "#5d3f42",
+						"surface-container-highest": "#e3e2e0",
+						"error-container": "#ffdad6",
+						"surface-bright": "#fbf9f6",
+						"on-tertiary": "#ffffff",
+						"tertiary-fixed": "#ffd9dc",
+						"forest-evergreen": "#1B3022",
+						"inverse-surface": "#30312f",
+						"on-primary-fixed-variant": "#364c3c",
+						"sapwood-cream": "#F9F7F2",
+						"on-secondary-container": "#794918",
+						"slate-iron": "#333333",
+						"harvest-oak": "#C68A53",
+						"surface-dim": "#dbdad7",
+						"tertiary-fixed-dim": "#e7bcbf",
+						"on-primary-container": "#819986",
+						"error": "#ba1a1a",
+						"surface-container-high": "#e9e8e5",
+						"on-primary-fixed": "#0b2013",
+						"on-background": "#1b1c1a",
+						"primary-fixed-dim": "#b4cdb8",
+						"secondary-fixed-dim": "#fcb97d",
+						"on-secondary": "#ffffff"
+					},
+					"borderRadius": {
+						"DEFAULT": "0.125rem",
+						"lg": "0.25rem",
+						"xl": "0.5rem",
+						"full": "0.75rem"
+					},
+					"spacing": {
+						"base": "8px",
+						"section-gap-md": "80px",
+						"section-gap-lg": "120px",
+						"gutter": "32px",
+						"margin-mobile": "20px",
+						"container-max": "1280px"
+					},
+					"fontFamily": {
+						"body-md": ["Hanken Grotesk"],
+						"label-caps": ["Hanken Grotesk"],
+						"headline-lg": ["Source Serif 4"],
+						"body-lg": ["Hanken Grotesk"],
+						"headline-lg-mobile": ["Source Serif 4"],
+						"nav-link": ["Hanken Grotesk"],
+						"display-lg": ["Source Serif 4"],
+						"headline-md": ["Source Serif 4"]
+					},
+					"fontSize": {
+						"body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+						"label-caps": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}],
+						"headline-lg": ["40px", {"lineHeight": "48px", "fontWeight": "600"}],
+						"body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+						"headline-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+						"nav-link": ["15px", {"lineHeight": "24px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+						"display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+						"headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}]
+					}
+				},
+			},
+		}
+	</script>
+	<style>
+      .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+      }
+      body {
+          background-color: #fbf9f6;
+          color: #1b1c1a;
+          font-family: 'Hanken Grotesk', sans-serif;
+          -webkit-font-smoothing: antialiased;
+      }
+      .hero-gradient {
+          background: linear-gradient(to bottom, rgba(27, 48, 34, 0.4), rgba(27, 48, 34, 0.8));
+      }
+	</style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-50 bg-surface dark:bg-surface border-b border-outline-variant dark:border-outline">
+	<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter flex justify-between items-center h-20">
+		<a class="font-headline-md text-headline-md font-bold text-forest-evergreen dark:text-inverse-primary" href="#">
+			Under Wood Construction
+		</a>
+		<nav class="hidden md:flex gap-8">
+			<a class="font-nav-link text-nav-link text-forest-evergreen dark:text-inverse-primary hover:text-harvest-oak dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Home</a>
+			<a class="font-nav-link text-nav-link text-forest-evergreen dark:text-inverse-primary hover:text-harvest-oak dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Services</a>
+			<a class="font-nav-link text-nav-link text-forest-evergreen dark:text-inverse-primary hover:text-harvest-oak dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About</a>
+			<a class="font-nav-link text-nav-link text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary pb-1 hover:text-harvest-oak dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Projects</a>
+			<a class="font-nav-link text-nav-link text-forest-evergreen dark:text-inverse-primary hover:text-harvest-oak dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Contact</a>
+		</nav>
+		<button class="bg-forest-evergreen text-sapwood-cream px-6 py-2 rounded-DEFAULT font-label-caps text-label-caps hover:bg-harvest-oak transition-colors">
+			Call Now
+		</button>
+	</div>
+</header>
+<main>
+	<!-- Hero Section -->
+	<section class="relative h-[80vh] min-h-[600px] flex items-end overflow-hidden">
+		<div class="absolute inset-0 w-full h-full">
+			<img alt="The Heritage Pavilion under construction" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/ADBb0uj3TAgU5cFpd3BZ4cP6UwbGr5kLKDn0BQMGOKgerOyDDJkBzU5B7mx819gZ1uTAwT2CUHCC5KpEJGDR_5xN77xSb-AIrwecqKxbjOiarABtc2lySdwXL0pZkRgu_u451DytN3BbZdrbMiimABHHM4s2DQJ8-5QlXmN8u8WnUifpP3pM8SCEtLVcgJAQdtWIpZdrMO9oqPhFVeynoecb4os67At4DnaweLuWcc98XaQ5ZlQbeF5z6le-8e8"/>
+			<div class="absolute inset-0 hero-gradient"></div>
+		</div>
+		<div class="relative max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full pb-section-gap-md">
+			<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-harvest-oak text-sapwood-cream font-label-caps text-label-caps mb-6">
+                        FEATURED PROJECT
+                    </span>
+				<h1 class="font-display-lg text-display-lg text-sapwood-cream mb-4">
+					The Heritage Pavilion
+				</h1>
+				<p class="font-body-lg text-body-lg text-sapwood-cream/90 mb-12">
+					A masterclass in traditional timber framing and modern architectural design.
+				</p>
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-sapwood-cream/20">
+					<div>
+						<p class="font-label-caps text-label-caps text-sapwood-cream/60 mb-1">LOCATION</p>
+						<p class="font-body-md text-body-md text-sapwood-cream">Underwood, MN</p>
+					</div>
+					<div>
+						<p class="font-label-caps text-label-caps text-sapwood-cream/60 mb-1">TYPE</p>
+						<p class="font-body-md text-body-md text-sapwood-cream">Timber Frame Structure</p>
+					</div>
+					<div>
+						<p class="font-label-caps text-label-caps text-sapwood-cream/60 mb-1">COMPLETION</p>
+						<p class="font-body-md text-body-md text-sapwood-cream">2023</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Project Overview -->
+	<section class="py-section-gap-lg bg-surface">
+		<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+			<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+				<div class="md:col-span-5 order-2 md:order-1">
+					<h2 class="font-headline-lg text-headline-lg text-forest-evergreen mb-6">Built to Last Generations</h2>
+					<p class="font-body-lg text-body-lg text-slate-iron mb-8 leading-relaxed">
+						A deep dive into the 'Heritage Pavilion', focusing on traditional mortise and tenon joinery. This project represents the pinnacle of Under Wood Construction's commitment to durability and heritage. Every beam was hand-selected to ensure structural integrity and aesthetic harmony within the surrounding Minnesota landscape.
+					</p>
+					<div class="space-y-4">
+						<div class="flex items-start gap-4">
+							<span class="material-symbols-outlined text-harvest-oak mt-1">architecture</span>
+							<div>
+								<h4 class="font-label-caps text-label-caps text-forest-evergreen">STRUCTURAL PRECISION</h4>
+								<p class="font-body-md text-body-md text-slate-iron/70">Engineered for extreme snow loads while maintaining a light, airy silhouette.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="md:col-span-7 order-1 md:order-2">
+					<div class="relative">
+						<img alt="Radial timber roof structure of the Heritage Pavilion" class="w-full aspect-square object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ugaYPww6ZqZnDMfOGv686YU0kiSVKKq3HIv0RTQ8rrn_FFyXSWvdFlPrvQcRidyUrWzTopuCchU6sy_1UhfodCoLUlFE2-FtOqyywWxJqhdN5-7cjzSilSHaeu10s0YfXck1pD6tYavEkTtvarHDBU9pZJBGakgbxTzgbbtDXyaiOgY5yWsc_NTmoyMhdm1LMpxxfMzvu4qRXcniYJIkJA1_2MyvblDZlv6Fq6eArno4M1_CS2Tfdt-zQ8"/>
+						<div class="absolute -bottom-6 -left-6 bg-harvest-oak p-8 hidden lg:block">
+							<span class="font-display-lg text-display-lg text-sapwood-cream block leading-none">01</span>
+							<span class="font-label-caps text-label-caps text-sapwood-cream/80">JOINERY DETAIL</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- The Process (Bento Grid Style) -->
+	<section class="py-section-gap-lg bg-surface-container-low">
+		<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter text-center mb-16">
+			<h2 class="font-headline-lg text-headline-lg text-forest-evergreen mb-4">The Craftsmanship Process</h2>
+			<p class="font-body-md text-body-md text-slate-iron max-w-2xl mx-auto">
+				From sustainable material sourcing to the final raising, our process honors the wood's organic nature while utilizing modern engineering.
+			</p>
+		</div>
+		<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+			<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4">
+				<!-- Grid Item 1: Large Feature -->
+				<div class="md:col-span-2 md:row-span-2 bg-white relative group overflow-hidden">
+					<img alt="Framing assembly process" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ujnjRPUVboJSUGkZsv702_WDzw4BAJhFq17WT5p96MaQQXYDN1saaC56wSrO-_JhDvJvEcO8VuYKDH1VGDIeQxfgwlb15TLD0KqvG7fXRBIn_VTYcbGz_tPkuFbUY_P_4izJttqmqd1E7eE14ngJMcdmLpuMxACFVC91BqEXcgw0POyU7rEnFV0SymbM_zBVevebkNhhdmGiwZKRa4GoUxFbMyT7w6qS0xPQ_MmCbfoX70pS1ey86dIPI0"/>
+					<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors"></div>
+					<div class="absolute bottom-0 left-0 p-8">
+						<h3 class="font-headline-md text-headline-md text-white mb-2">Sustainable Sourcing</h3>
+						<p class="font-body-md text-body-md text-white/80 max-w-sm">We utilize kiln-dried, sustainably harvested oak and pine, ensuring the skeletal frame remains stable for centuries.</p>
+					</div>
+				</div>
+				<!-- Grid Item 2: Detail -->
+				<div class="md:col-span-2 bg-white flex flex-col md:flex-row">
+					<div class="flex-1 p-8 flex flex-col justify-center">
+						<h3 class="font-label-caps text-label-caps text-harvest-oak mb-2">CUSTOM JOINERY</h3>
+						<p class="font-body-md text-body-md text-slate-iron">Hand-cut mortise and tenon joints secured with hardwood pegs—no nails required.</p>
+					</div>
+					<div class="flex-1 overflow-hidden">
+						<img alt="Craftsman working on a timber joint" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ugAfzpd6GGd-EjayH_e42angiULL06uJZhEsVLaUtQTzzuK_yLyAawaHiNjRakGehjIdF-Gd9uNRF9V7Hw62tZ_Mg_SVtDn9QZFKYHho11VxcndwaQKxXkL5WO6PniG5BTY6zj4U1H9eU7vc2MvdkpwyWN4hj1od8nRgEy7PN4eqcM8AmF1WyPBJFZ-hXGRRsNSDP9Pf-5SeB_cqmSBOiqyAbMymoiTKY4EoQjiKxf5a-yEznAXV3CumQ"/>
+					</div>
+				</div>
+				<!-- Grid Item 3: Secondary Feature -->
+				<div class="md:col-span-1 bg-forest-evergreen p-8 flex flex-col justify-between">
+					<span class="material-symbols-outlined text-harvest-oak text-4xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+					<div>
+						<h3 class="font-headline-md text-headline-md text-sapwood-cream mb-2">Raw Power</h3>
+						<p class="font-body-md text-body-md text-sapwood-cream/70">Unfinished timber accents provide a tactile connection to the forest.</p>
+					</div>
+				</div>
+				<!-- Grid Item 4: Accents -->
+				<div class="md:col-span-1 overflow-hidden">
+					<img alt="Timber accents on site" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujReW7dm4MpTle1t3Ozra7Pf7oi518_3nticHmlQQDN2JJXJjmSZ4akQEFZyJJt7Go2vyJUPu4t7DzEPDTwyzwsv7oInO9eGIPwpL3BCvD69dnKPo8kNxcuLOfM_K9cigNSQ38Sn37-qSokVZmPmrDdwUox01tjO5cASoGQKYh1Mu1pwewM1ddrobISfXg9gxYRpo-yk9wD6h8NbiChysrDft9Eu-U94iRAG-BNDcCJHVPaxJ-JcOk6eA"/>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Final Result -->
+	<section class="py-section-gap-lg bg-surface">
+		<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+			<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
+				<div class="max-w-2xl">
+					<h2 class="font-headline-lg text-headline-lg text-forest-evergreen mb-4">Structural Integrity meets Aesthetic Warmth</h2>
+					<p class="font-body-lg text-body-lg text-slate-iron">
+						The finished pavilion stands as a testament to what is possible when ancient wisdom meets contemporary architectural vision.
+					</p>
+				</div>
+			</div>
+			<div class="w-full aspect-[21/9] overflow-hidden">
+				<img alt="Wide shot of the finished Heritage Pavilion" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0uj3TAgU5cFpd3BZ4cP6UwbGr5kLKDn0BQMGOKgerOyDDJkBzU5B7mx819gZ1uTAwT2CUHCC5KpEJGDR_5xN77xSb-AIrwecqKxbjOiarABtc2lySdwXL0pZkRgu_u451DytN3BbZdrbMiimABHHM4s2DQJ8-5QlXmN8u8WnUifpP3pM8SCEtLVcgJAQdtWIpZdrMO9oqPhFVeynoecb4os67At4DnaweLuWcc98XaQ5ZlQbeF5z6le-8e8"/>
+			</div>
+		</div>
+	</section>
+	<!-- Call to Action -->
+	<section class="bg-forest-evergreen py-section-gap-lg overflow-hidden relative">
+		<!-- Atmospheric background detail -->
+		<div class="absolute right-0 top-0 opacity-10 pointer-events-none">
+			<span class="material-symbols-outlined text-[400px]" style="font-variation-settings: 'wght' 100;">carpenter</span>
+		</div>
+		<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10 text-center">
+			<h2 class="font-display-lg text-display-lg text-sapwood-cream mb-6">Inspired by this project?</h2>
+			<p class="font-body-lg text-body-lg text-sapwood-cream/80 max-w-xl mx-auto mb-12">
+				Whether it's a heritage barn, a modern timber home, or a commercial pavilion, we're ready to bring your vision to life.
+			</p>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<button class="bg-harvest-oak text-sapwood-cream px-10 py-4 rounded-DEFAULT font-label-caps text-label-caps hover:bg-sapwood-cream hover:text-forest-evergreen transition-all duration-300">
+					Start Your Build
+				</button>
+				<button class="border border-sapwood-cream text-sapwood-cream px-10 py-4 rounded-DEFAULT font-label-caps text-label-caps hover:bg-sapwood-cream/10 transition-all duration-300">
+					View More Projects
+				</button>
+			</div>
+		</div>
+	</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-charcoal-etch">
+	<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap-md flex flex-col md:flex-row justify-between">
+		<div class="mb-12 md:mb-0">
+			<a class="font-headline-md text-headline-md text-sapwood-cream block mb-6" href="#">Under Wood Construction</a>
+			<p class="font-body-md text-body-md text-sapwood-cream/60 max-w-xs">
+				Crafting legacy structures with precision joinery and sustainable timber across the Midwest.
+			</p>
+		</div>
+		<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+			<div class="flex flex-col gap-4">
+				<span class="font-label-caps text-label-caps text-harvest-oak uppercase">Company</span>
+				<a class="font-body-md text-body-md text-sapwood-cream/80 hover:text-sapwood-cream transition-colors" href="#">Services</a>
+				<a class="font-body-md text-body-md text-sapwood-cream/80 hover:text-sapwood-cream transition-colors" href="#">Projects</a>
+				<a class="font-body-md text-body-md text-sapwood-cream/80 hover:text-sapwood-cream transition-colors" href="#">About Us</a>
+			</div>
+			<div class="flex flex-col gap-4">
+				<span class="font-label-caps text-label-caps text-harvest-oak uppercase">Inquiry</span>
+				<a class="font-body-md text-body-md text-sapwood-cream/80 hover:text-sapwood-cream transition-colors" href="#">Contact</a>
+				<a class="font-body-md text-body-md text-sapwood-cream/80 hover:text-sapwood-cream transition-colors" href="#">Get Quote</a>
+				<a class="font-body-md text-body-md text-sapwood-cream/80 hover:text-sapwood-cream transition-colors" href="#">Process</a>
+			</div>
+			<div class="flex flex-col gap-4">
+				<span class="font-label-caps text-label-caps text-harvest-oak uppercase">Legal</span>
+				<a class="font-body-md text-body-md text-sapwood-cream/80 hover:text-sapwood-cream transition-colors" href="#">Privacy Policy</a>
+				<a class="font-body-md text-body-md text-sapwood-cream/80 hover:text-sapwood-cream transition-colors" href="#">Terms of Service</a>
+			</div>
+		</div>
+	</div>
+	<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-8 border-t border-sapwood-cream/10">
+		<p class="font-label-caps text-label-caps text-sapwood-cream/40 text-center md:text-left">
+			© 2024 Under Wood Construction. All rights reserved. Licensed &amp; Bonded.
+		</p>
+	</div>
+</footer>
+<script>
+	// Simple scroll interaction for header transparency or elevation
+	window.addEventListener('scroll', () => {
+		const header = document.querySelector('header');
+		if (window.scrollY > 50) {
+			header.classList.add('shadow-sm');
+		} else {
+			header.classList.remove('shadow-sm');
+		}
+	});
+</script>
+</body></html>

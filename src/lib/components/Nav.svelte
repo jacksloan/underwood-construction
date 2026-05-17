@@ -1,8 +1,12 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { onMount } from 'svelte';
 	import Icon from './Icon.svelte';
 
 	let mobileOpen = $state(false);
+	let activeHash = $state('');
+	let debounceTimer: ReturnType<typeof setTimeout> | null = null;
+	const DEBOUNCE_MS = 150;
 
 	const links = [
 		{ href: '/', label: 'Home' },
@@ -12,9 +16,87 @@
 		{ href: '/#contact', label: 'Contact' }
 	];
 
+	const sectionIds = ['services', 'about', 'contact'];
+
+	function setActiveHash(hash: string) {
+		if (debounceTimer) clearTimeout(debounceTimer);
+		debounceTimer = setTimeout(() => {
+			activeHash = hash;
+		}, DEBOUNCE_MS);
+	}
+
+	function isActive(linkHref: string): boolean {
+		const pathname = page.url.pathname;
+
+		// Non-home pages: match by pathname prefix
+		if (pathname !== '/') {
+			const linkPath = linkHref.split('#')[0];
+			return linkPath !== '/' && pathname.startsWith(linkPath);
+		}
+
+		// On home page: match hash links via intersection observer
+		if (linkHref.includes('#')) {
+			const hash = linkHref.split('#')[1];
+			return activeHash === hash;
+		}
+
+		// Home link is active only when no section is in view
+		return linkHref === '/' && activeHash === '';
+	}
+
 	function closeMobile() {
 		mobileOpen = false;
 	}
+
+	onMount(() => {
+		const visibleSections = new Set<string>();
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				for (const entry of entries) {
+					if (entry.isIntersecting) {
+						visibleSections.add(entry.target.id);
+					} else {
+						visibleSections.delete(entry.target.id);
+					}
+				}
+				// Pick the first visible section in DOM order, or fall back to ''
+				const active = sectionIds.find((id) => visibleSections.has(id)) ?? '';
+				setActiveHash(active);
+			},
+			{ rootMargin: '-30% 0px -30% 0px', threshold: 0 }
+		);
+
+		function observeSections() {
+			for (const id of sectionIds) {
+				const el = document.getElementById(id);
+				if (el) observer.observe(el);
+			}
+		}
+
+		observeSections();
+
+		// Re-observe after SvelteKit navigations (sections may not exist on other pages)
+		const unsubscribe = $effect.root(() => {
+			$effect(() => {
+				const _pathname = page.url.pathname;
+				if (_pathname === '/') {
+					// Wait for DOM to render, then let observer determine the active section
+					requestAnimationFrame(() => observeSections());
+				} else {
+					if (debounceTimer) clearTimeout(debounceTimer);
+					activeHash = '';
+					visibleSections.clear();
+				}
+			});
+		});
+
+		return () => {
+			if (debounceTimer) clearTimeout(debounceTimer);
+			observer.disconnect();
+			unsubscribe();
+		};
+	});
 </script>
 
 <!-- Desktop Header -->
@@ -27,11 +109,11 @@
 		<!-- Desktop Nav -->
 		<nav class="hidden gap-8 md:flex">
 			{#each links as link}
-				{@const isActive = page.url.pathname === link.href || (link.href !== '/' && page.url.pathname.startsWith(link.href.split('#')[0]) && link.href.split('#')[0] !== '/')}
+				{@const active = isActive(link.href)}
 				<a
 					href={link.href}
 					class="text-[15px] font-medium leading-6 tracking-[0.05em] font-sans transition-colors duration-200
-						{isActive ? 'border-b-2 border-secondary text-accent pb-1' : 'text-forest-evergreen hover:text-harvest-oak'}"
+						{active ? 'border-b-2 border-secondary text-accent pb-1' : 'text-forest-evergreen hover:text-harvest-oak'}"
 				>
 					{link.label}
 				</a>
