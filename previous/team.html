@@ -1,0 +1,445 @@
+<!doctype html>
+
+<html class="light" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Our Craftspeople | Under Wood Construction</title>
+		<!-- Material Symbols -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Source+Serif+4:wght@400;600;700&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<script id="tailwind-config">
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					extend: {
+						colors: {
+							primary: '#061b0e',
+							'tertiary-container': '#3f2427',
+							'forest-evergreen': '#1B3022',
+							'secondary-container': '#ffbb80',
+							'surface-container-highest': '#e3e2e0',
+							'on-primary-fixed-variant': '#364c3c',
+							'on-tertiary': '#ffffff',
+							'inverse-on-surface': '#f2f1ee',
+							'surface-container-low': '#f5f3f0',
+							'on-error': '#ffffff',
+							'secondary-fixed': '#ffdcc1',
+							secondary: '#855321',
+							'inverse-primary': '#b4cdb8',
+							'on-primary-fixed': '#0b2013',
+							'on-tertiary-fixed': '#2d1417',
+							'on-surface-variant': '#434843',
+							surface: '#fbf9f6',
+							'on-secondary-fixed-variant': '#693c0a',
+							'primary-fixed-dim': '#b4cdb8',
+							'surface-variant': '#e3e2e0',
+							'surface-bright': '#fbf9f6',
+							'outline-variant': '#c3c8c1',
+							'on-secondary-fixed': '#2e1500',
+							'secondary-fixed-dim': '#fcb97d',
+							'error-container': '#ffdad6',
+							'charcoal-etch': '#121212',
+							'surface-tint': '#4d6453',
+							'on-primary-container': '#819986',
+							'harvest-oak': '#C68A53',
+							'surface-container-lowest': '#ffffff',
+							'surface-dim': '#dbdad7',
+							'on-error-container': '#93000a',
+							'on-primary': '#ffffff',
+							'slate-iron': '#333333',
+							'on-tertiary-fixed-variant': '#5d3f42',
+							'primary-fixed': '#d0e9d4',
+							'sapwood-cream': '#F9F7F2',
+							'tertiary-fixed-dim': '#e7bcbf',
+							'on-background': '#1b1c1a',
+							'tertiary-fixed': '#ffd9dc',
+							error: '#ba1a1a',
+							'on-tertiary-container': '#b0898c',
+							tertiary: '#271013',
+							'on-surface': '#1b1c1a',
+							'on-secondary': '#ffffff',
+							'surface-container-high': '#e9e8e5',
+							outline: '#737973',
+							'inverse-surface': '#30312f',
+							'primary-container': '#1b3022',
+							background: '#fbf9f6',
+							'surface-container': '#efeeeb',
+							'on-secondary-container': '#794918'
+						},
+						borderRadius: {
+							DEFAULT: '0.125rem',
+							lg: '0.25rem',
+							xl: '0.5rem',
+							full: '0.75rem'
+						},
+						spacing: {
+							'section-gap-lg': '120px',
+							'margin-mobile': '20px',
+							gutter: '32px',
+							'container-max': '1280px',
+							'section-gap-md': '80px',
+							base: '8px'
+						},
+						fontFamily: {
+							'body-md': ['Hanken Grotesk'],
+							'headline-lg-mobile': ['Source Serif 4'],
+							'display-lg': ['Source Serif 4'],
+							'body-lg': ['Hanken Grotesk'],
+							'nav-link': ['Hanken Grotesk'],
+							'headline-md': ['Source Serif 4'],
+							'headline-lg': ['Source Serif 4'],
+							'label-caps': ['Hanken Grotesk']
+						},
+						fontSize: {
+							'body-md': ['16px', { lineHeight: '24px', fontWeight: '400' }],
+							'headline-lg-mobile': ['32px', { lineHeight: '40px', fontWeight: '600' }],
+							'display-lg': [
+								'56px',
+								{ lineHeight: '64px', letterSpacing: '-0.02em', fontWeight: '700' }
+							],
+							'body-lg': ['18px', { lineHeight: '28px', fontWeight: '400' }],
+							'nav-link': [
+								'15px',
+								{ lineHeight: '24px', letterSpacing: '0.05em', fontWeight: '500' }
+							],
+							'headline-md': ['28px', { lineHeight: '36px', fontWeight: '600' }],
+							'headline-lg': ['40px', { lineHeight: '48px', fontWeight: '600' }],
+							'label-caps': [
+								'14px',
+								{ lineHeight: '20px', letterSpacing: '0.1em', fontWeight: '600' }
+							]
+						}
+					}
+				}
+			};
+		</script>
+		<style>
+			.material-symbols-outlined {
+				font-variation-settings:
+					'FILL' 0,
+					'wght' 400,
+					'GRAD' 0,
+					'opsz' 24;
+			}
+			body {
+				background-color: #fbf9f6; /* sapwood-cream / background */
+				color: #1b3022; /* forest-evergreen */
+			}
+			.text-balance {
+				text-wrap: balance;
+			}
+		</style>
+	</head>
+	<body class="font-body-md text-body-md overflow-x-hidden antialiased">
+		<!-- TopNavBar Navigation Shell -->
+		<header
+			class="fixed top-0 right-0 left-0 z-50 flex h-20 items-center bg-sapwood-cream dark:bg-forest-evergreen"
+		>
+			<nav
+				class="px-base mx-auto flex h-20 w-full max-w-container-max items-center justify-between md:px-gutter"
+			>
+				<div class="flex items-center">
+					<a
+						class="font-headline-md text-headline-md font-bold tracking-tight text-forest-evergreen dark:text-sapwood-cream"
+						href="#"
+						>Under Wood Construction</a
+					>
+				</div>
+				<!-- Desktop Links -->
+				<div class="hidden items-center space-x-8 md:flex">
+					<a
+						class="font-nav-link text-nav-link text-forest-evergreen transition-colors duration-200 hover:text-harvest-oak dark:text-sapwood-cream"
+						href="#"
+						>Home</a
+					>
+					<a
+						class="font-nav-link text-nav-link border-b-2 border-harvest-oak pb-1 font-bold text-harvest-oak"
+						href="#"
+						>About</a
+					>
+					<a
+						class="font-nav-link text-nav-link text-forest-evergreen transition-colors duration-200 hover:text-harvest-oak dark:text-sapwood-cream"
+						href="#"
+						>Services</a
+					>
+					<a
+						class="font-nav-link text-nav-link text-forest-evergreen transition-colors duration-200 hover:text-harvest-oak dark:text-sapwood-cream"
+						href="#"
+						>Projects</a
+					>
+					<a
+						class="font-nav-link text-nav-link text-forest-evergreen transition-colors duration-200 hover:text-harvest-oak dark:text-sapwood-cream"
+						href="#"
+						>Contact</a
+					>
+					<button
+						class="font-nav-link text-nav-link ml-4 bg-forest-evergreen px-6 py-2 text-sapwood-cream transition-all duration-200 hover:bg-harvest-oak"
+					>
+						Get a Quote
+					</button>
+				</div>
+				<!-- Mobile Menu Toggle (Simplified) -->
+				<button class="p-2 text-forest-evergreen md:hidden">
+					<span class="material-symbols-outlined">menu</span>
+				</button>
+			</nav>
+		</header>
+		<main class="mt-20">
+			<!-- Hero Section -->
+			<section
+				class="px-base border-surface-variant border-b bg-sapwood-cream py-section-gap-md md:px-gutter md:py-section-gap-lg"
+			>
+				<div class="mx-auto max-w-container-max text-center">
+					<span
+						class="font-label-caps text-label-caps mb-4 block tracking-widest text-harvest-oak uppercase"
+						>Our Legacy of Excellence</span
+					>
+					<h1
+						class="font-display-lg text-display-lg md:text-display-lg mx-auto mb-6 max-w-3xl text-balance text-forest-evergreen"
+					>
+						Our Team
+					</h1>
+					<p
+						class="font-body-lg text-body-lg mx-auto max-w-2xl text-balance text-forest-evergreen/80"
+					>
+						Masters of joinery, timber framing, and sustainable building. Our team combines
+						traditional techniques with modern architectural precision.
+					</p>
+				</div>
+			</section>
+			<!-- Team Grid Section -->
+			<section class="px-base bg-surface py-section-gap-lg md:px-gutter">
+				<div class="mx-auto max-w-container-max">
+					<div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+						<div class="group flex flex-col items-center text-center">
+							<div
+								class="mb-6 aspect-square w-full max-w-[280px] overflow-hidden rounded-full bg-surface-container"
+							>
+								<img
+									alt="Carter Gjevre - Owner &amp; Principal Carpenter"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+									src="https://lh3.googleusercontent.com/aida/ADBb0ug6K_-FIOWZJF-BV09SJS_0BZ3RYIWvIgoL5vStMDva53EuSj_8MqCdEdbf4Fk0fBh6OYT7Mk_8tG3tR5p7FLKngEXgmFKWvV7bnZ65bxh00AU-aW4aQ3M5-iLrFbVqQHrWZgQqRnH8HbXd7ZvxduGYAN5R1H67mYmfChHqjR7qF3sx9_WDLRfPcR2zcP7Bj_7aEbHNtRkdAP6BnQx3T7ArdnM5QU3DL1q6n_oIguYQ6CCsD-okF7GJxA"
+								/>
+							</div>
+							<div>
+								<h3 class="font-headline-md text-headline-md mb-1 text-forest-evergreen">
+									Carter Gjevre
+								</h3>
+								<p class="font-label-caps text-label-caps text-harvest-oak uppercase">
+									Owner &amp; Principal Carpenter
+								</p>
+							</div>
+						</div>
+						<div class="group flex flex-col items-center text-center">
+							<div
+								class="mb-6 aspect-square w-full max-w-[280px] overflow-hidden rounded-full bg-surface-container"
+							>
+								<img
+									alt="Peter Jansen - Master Builder &amp; Timber Framer"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+									src="https://lh3.googleusercontent.com/aida/ADBb0uiFcUvziINl0KNZpyd868QZjUBdKDDZcm_x3LHaVmoAcibl7wHi2iZFl4eEmXgwUHjVZ2IxWUTsFTmMXGMxCVbX0_-l0aQWA7UAoKRJshTSeSe1DN982uhTk0vS63U3llKD-xRaTfCL9EV05rwAaHdFS3a5LL7h8R-6eIWvYeT7f6j8dF54EPVj10PcYoQaIJRohHMGDnYV6_QlcSXygFBTTjR4J-OOf5PaomO0k6BSUlBml6PVvbfS2Hc"
+								/>
+							</div>
+							<div>
+								<h3 class="font-headline-md text-headline-md mb-1 text-forest-evergreen">
+									Peter Jansen
+								</h3>
+								<p class="font-label-caps text-label-caps text-harvest-oak uppercase">
+									Timber Framer &amp; Carpenter
+								</p>
+							</div>
+						</div>
+						<!-- Card 1: Mike Loeffler -->
+						<div class="group flex flex-col items-center text-center">
+							<div
+								class="mb-6 aspect-square w-full max-w-[280px] overflow-hidden rounded-full bg-surface-container"
+							>
+								<img
+									alt="Mike Loeffler - Master Craftsman"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+									src="https://lh3.googleusercontent.com/aida/ADBb0uivD24RN7E2St1xhTX7IpqCOUfICHkpObAUnWBuv7i7O0ih7m0wbvRe0bJ2Pw5mP2Tcc6fAZvyD-IIlXJXM7PFtQ0ZHKA73yijDx67MiU_POJIllHPnDT4WRxtyjzSfuNrIUTnPXsh6qbZySynUItev4pFagnsR8-NYlnkIprpXL3j_QQFFSys7G4afCoK_o1sIWJ6QmYq3Xa3TcFRqHm8zFKieA28ZS6poU9rMml6W1LMKnk0a3hJEPVk"
+								/>
+							</div>
+							<div>
+								<h3 class="font-headline-md text-headline-md mb-1 text-forest-evergreen">
+									Mike Loeffler
+								</h3>
+								<p class="font-label-caps text-label-caps text-harvest-oak uppercase">
+									Timber Framer &amp; Carpenter
+								</p>
+							</div>
+						</div>
+						<div class="group flex flex-col items-center text-center">
+							<div
+								class="mb-6 aspect-square w-full max-w-[280px] overflow-hidden rounded-full bg-surface-container"
+							>
+								<img
+									alt="Andrew Albertsen - Timber Framer &amp; Instructor"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+									src="https://lh3.googleusercontent.com/aida/ADBb0ujyt5UMPwfFkum8YHLXYfbG9tRJs1JgNQ90o1QFbCxvbGIF4-7wZ3DUU6FDzCZfTkORwVC4B_cItUfxP22qn6uKKPT8551364pBhRaieVyRIzDhpTdaC66k22V7bQvlGCBCH-s419xpNvDoLWZt6t2VzLyJwy8p8dMnar3RdTL1O4PiVUwAGqbk39zsVSqEEOPUQcOUNjZSkyONiX5TgpGfPfNFEeh09e3-Y5oNwTAt_hSl5Qgjxw1dsA"
+								/>
+							</div>
+							<div>
+								<h3 class="font-headline-md text-headline-md mb-1 text-forest-evergreen">
+									Andrew Albertsen
+								</h3>
+								<p class="font-label-caps text-label-caps text-harvest-oak uppercase">
+									Timber Framer &amp; Carpenter
+								</p>
+							</div>
+						</div>
+						<!-- Card 2: Owen River -->
+						<div class="group flex flex-col items-center text-center">
+							<div
+								class="mb-6 aspect-square w-full max-w-[280px] overflow-hidden rounded-full bg-surface-container"
+							>
+								<img
+									alt="Owen River - Natural Plasterer &amp; Carpenter"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+									src="https://lh3.googleusercontent.com/aida/ADBb0ughAo9H_rUTm85VlLVeP7D-cYYY6WckoN1GcC70QKcftXruusJWJFm6Ws7pqld6bQIUmMylhxqb47t_iqp49eiJbTpRCB188s_rC28XhV-xhMeBekOu2LKUJhp7E9a2OLG6RIAJb-sBxBnH-mCXtA0F66ipGkj3t1T24ZWORCrWW7Fmz3QJBrJrJSx7vkKTHmP2EGuT606aBgAqd8FTwP2iC8roxKTOTn9f31OmHPZxqmJ-AvaA_n9MA9M"
+								/>
+							</div>
+							<div>
+								<h3 class="font-headline-md text-headline-md mb-1 text-forest-evergreen">
+									Owen River
+								</h3>
+								<p class="font-label-caps text-label-caps text-harvest-oak uppercase">
+									Carpenter & Lead Plasterer
+								</p>
+							</div>
+						</div>
+						<!-- Card 3: Tryg Solberg -->
+						<div class="group flex flex-col items-center text-center">
+							<div
+								class="mb-6 aspect-square w-full max-w-[280px] overflow-hidden rounded-full bg-surface-container"
+							>
+								<img
+									alt="Tryg Solberg - Woodworker &amp; Photographer"
+									class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+									src="https://lh3.googleusercontent.com/aida/ADBb0ujXEKR6VIOyy9UD1igRAWYxXBMe-myfkGgSB6EoQuZxsfmtwbHHRTgbKEnIsJvJdOlgFf9wEGjSBaT3Lip88WEvVOSN5BhqXBy2vBGpLq6YvK3DLh1lZ0T41NWzsljwEpSEfsINjmvcZTO519ZYdiBZx7gjhkY0p0eEs973A-LczsYUBmh3vBJKV9dlJQTEilrNceRQ0oEdkM0ABfICMZrqXisCjqmYnEb7WpdRr387BT-vPW1YGbSp6A"
+								/>
+							</div>
+							<div>
+								<h3 class="font-headline-md text-headline-md mb-1 text-forest-evergreen">
+									Tryg Solberg
+								</h3>
+								<p class="font-label-caps text-label-caps text-harvest-oak uppercase">Carpenter</p>
+							</div>
+						</div>
+						<!-- Card 4: Peter Jansen -->
+						<!-- Card 5: Andrew Albertsen -->
+					</div>
+				</div>
+			</section>
+			<!-- Call to Action -->
+			<section class="px-base bg-forest-evergreen py-section-gap-md md:px-gutter">
+				<div
+					class="mx-auto flex max-w-container-max flex-col items-center justify-between md:flex-row"
+				>
+					<div class="mb-8 text-center md:mb-0 md:text-left">
+						<h2 class="font-headline-lg text-headline-lg mb-2 text-sapwood-cream">
+							Ready to start your build?
+						</h2>
+						<p class="font-body-lg text-body-lg text-sapwood-cream/80">
+							Consult with our master craftspeople today.
+						</p>
+					</div>
+					<button
+						class="font-label-caps text-label-caps bg-harvest-oak px-10 py-4 tracking-widest text-sapwood-cream uppercase transition-all duration-300 hover:bg-sapwood-cream hover:text-forest-evergreen"
+					>
+						Get a Quote
+					</button>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="border-t border-forest-evergreen/10 bg-forest-evergreen dark:bg-primary">
+			<div
+				class="px-base mx-auto flex w-full max-w-container-max flex-col items-center justify-between py-section-gap-md md:flex-row md:px-gutter"
+			>
+				<div class="mb-8 text-center md:mb-0 md:text-left">
+					<p class="font-headline-md text-headline-md mb-4 text-sapwood-cream">
+						Under Wood Construction
+					</p>
+					<p class="font-body-md text-body-md max-w-sm text-sapwood-cream/60">
+						Preserving the art of timber framing through modern design and sustainable craftsmanship
+						since 1994.
+					</p>
+				</div>
+				<div class="flex flex-col items-center gap-6 md:items-end">
+					<div class="flex gap-8">
+						<a
+							class="font-body-md text-body-md text-sapwood-cream/80 transition-colors duration-200 hover:text-harvest-oak"
+							href="#"
+							>Privacy Policy</a
+						>
+						<a
+							class="font-body-md text-body-md text-sapwood-cream/80 transition-colors duration-200 hover:text-harvest-oak"
+							href="#"
+							>Terms of Service</a
+						>
+						<a
+							class="font-body-md text-body-md text-sapwood-cream/80 transition-colors duration-200 hover:text-harvest-oak"
+							href="#"
+							>Licensing</a
+						>
+						<a
+							class="font-body-md text-body-md text-sapwood-cream/80 transition-colors duration-200 hover:text-harvest-oak"
+							href="#"
+							>Contact Us</a
+						>
+					</div>
+					<p class="font-body-md text-body-md text-sapwood-cream/40">
+						© 2024 Under Wood Construction. All rights reserved. Licensed &amp; Insured.
+					</p>
+				</div>
+			</div>
+		</footer>
+		<script>
+			// Micro-interactions for smooth revealing of cards
+			document.addEventListener('DOMContentLoaded', () => {
+				const cards = document.querySelectorAll('.group');
+				const observerOptions = {
+					threshold: 0.1
+				};
+
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach((entry, index) => {
+						if (entry.isIntersecting) {
+							setTimeout(() => {
+								entry.target.classList.add('opacity-100', 'translate-y-0');
+								entry.target.classList.remove('opacity-0', 'translate-y-10');
+							}, index * 100);
+							observer.unobserve(entry.target);
+						}
+					});
+				}, observerOptions);
+
+				cards.forEach((card) => {
+					card.classList.add(
+						'opacity-0',
+						'translate-y-10',
+						'transition-all',
+						'duration-1000',
+						'ease-out'
+					);
+					observer.observe(card);
+				});
+			});
+		</script>
+	</body>
+</html>

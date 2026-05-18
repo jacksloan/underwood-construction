@@ -13,6 +13,7 @@
 		{ href: '/#services', label: 'Services' },
 		{ href: '/#about', label: 'About' },
 		{ href: '/projects', label: 'Projects' },
+		{ href: '/team', label: 'Team' },
 		{ href: '/#contact', label: 'Contact' }
 	];
 
