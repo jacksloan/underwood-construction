@@ -18,11 +18,11 @@
 
 <!-- Hero Section -->
 <section class="relative flex h-[70vh] w-full items-end md:h-[85vh]">
-	<img
+	<enhanced:img
 		alt="The Heritage Pavilion Finished Frame"
 		class="absolute inset-0 h-full w-full object-cover contrast-[1.1] grayscale-[20%]"
 		style={heroTransition}
-		src="/images/project-8-pavillion-assembly.png"
+		src="$lib/assets/images/project-8-pavillion-assembly.png"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-t from-forest-evergreen/80 to-transparent"></div>
 	<div class="relative mx-auto w-full max-w-container-max px-margin-mobile pb-16 md:px-gutter md:pb-24">
@@ -82,10 +82,10 @@
 			</div>
 			<div class="lg:col-span-7">
 				<div class="border border-outline-variant bg-base-100 p-2 shadow-sm">
-					<img
+					<enhanced:img
 						alt="The Radial Roof Assembly Under Construction"
 						class="aspect-[4/3] w-full object-cover"
-						src="/images/project-8-pavillion-prep.png"
+						src="$lib/assets/images/project-8-pavillion-prep.png"
 					/>
 				</div>
 			</div>
@@ -106,10 +106,10 @@
 			<!-- Gallery Item 1 -->
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Traditional Mortise and Tenon Joinery Close-up"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-8-pavillion-prep.png"
+						src="$lib/assets/images/project-8-pavillion-prep.png"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Precision Joinery</h3>
@@ -118,10 +118,10 @@
 			<!-- Gallery Item 2 -->
 			<div class="group cursor-pointer lg:translate-y-12">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Timber Framing Radial Roof Structure"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-8-pavillion-assembly.png"
+						src="$lib/assets/images/project-8-pavillion-assembly.png"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Radial Engineering</h3>
@@ -130,10 +130,10 @@
 			<!-- Gallery Item 3 -->
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Heritage Pavilion Frame Standing High"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-8-pavillion-prep.png"
+						src="$lib/assets/images/project-8-pavillion-prep.png"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Skeletal Integrity</h3>

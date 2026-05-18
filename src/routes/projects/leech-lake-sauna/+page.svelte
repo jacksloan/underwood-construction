@@ -18,11 +18,11 @@
 
 <!-- Hero Section -->
 <section class="relative flex h-[70vh] w-full items-end md:h-[85vh]">
-	<img
+	<enhanced:img
 		alt="Leech Lake Sauna Exterior"
 		class="absolute inset-0 h-full w-full object-cover contrast-[1.1] grayscale-[20%]"
 		style={heroTransition}
-		src="/images/project-3-sauna-exterior.jpg"
+		src="$lib/assets/images/project-3-sauna-exterior.jpg"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-t from-forest-evergreen/80 to-transparent"></div>
 	<div class="relative mx-auto w-full max-w-container-max px-margin-mobile pb-16 md:px-gutter md:pb-24">
@@ -82,10 +82,10 @@
 			</div>
 			<div class="lg:col-span-7">
 				<div class="border border-outline-variant bg-base-100 p-2 shadow-sm">
-					<img
+					<enhanced:img
 						alt="Leech Lake Sauna Alternate View"
 						class="aspect-[4/3] w-full object-cover"
-						src="/images/project-3-sauna-exterior-2.jpg"
+						src="$lib/assets/images/project-3-sauna-exterior-2.jpg"
 					/>
 				</div>
 			</div>
@@ -105,10 +105,10 @@
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Sauna Exterior View"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-3-sauna-exterior.jpg"
+						src="$lib/assets/images/project-3-sauna-exterior.jpg"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Exterior Design</h3>
@@ -116,10 +116,10 @@
 			</div>
 			<div class="group cursor-pointer lg:translate-y-12">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Sauna Exterior Alternate Angle"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-3-sauna-exterior-2.jpg"
+						src="$lib/assets/images/project-3-sauna-exterior-2.jpg"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Weather-Tight Construction</h3>
@@ -127,10 +127,10 @@
 			</div>
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Sauna Interior"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-3-sauna-interior.jpg"
+						src="$lib/assets/images/project-3-sauna-interior.jpg"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Interior Warmth</h3>

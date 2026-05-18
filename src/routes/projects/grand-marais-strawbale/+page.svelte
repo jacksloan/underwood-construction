@@ -18,11 +18,11 @@
 
 <!-- Hero Section -->
 <section class="relative flex h-[70vh] w-full items-end md:h-[85vh]">
-	<img
+	<enhanced:img
 		alt="Grand Marais Strawbale Home"
 		class="absolute inset-0 h-full w-full object-cover contrast-[1.1] grayscale-[20%]"
 		style={heroTransition}
-		src="/images/project-9-south-east.jpeg"
+		src="$lib/assets/images/project-9-south-east.jpeg"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-t from-forest-evergreen/80 to-transparent"></div>
 	<div class="relative mx-auto w-full max-w-container-max px-margin-mobile pb-16 md:px-gutter md:pb-24">
@@ -82,10 +82,10 @@
 			</div>
 			<div class="lg:col-span-7">
 				<div class="border border-outline-variant bg-base-100 p-2 shadow-sm">
-					<img
+					<enhanced:img
 						alt="Strawbale Wall Construction with Blueskin Moisture Barrier"
 						class="aspect-[4/3] w-full object-cover"
-						src="/images/project-9-grand-marais-strawbale-blueskin.jpg"
+						src="$lib/assets/images/project-9-grand-marais-strawbale-blueskin.jpg"
 					/>
 				</div>
 			</div>
@@ -105,10 +105,10 @@
 		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Panel Assembly"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-9-panel-assembly.jpeg"
+						src="$lib/assets/images/project-9-panel-assembly.jpeg"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Panel Assembly</h3>
@@ -116,10 +116,10 @@
 			</div>
 			<div class="group cursor-pointer lg:translate-y-12">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Strawbale Wall Section"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-9-grand-marais-strawbale.jpg"
+						src="$lib/assets/images/project-9-grand-marais-strawbale.jpg"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Strawbale Walls</h3>
@@ -127,10 +127,10 @@
 			</div>
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Standalone Timber Frame Sauna"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-9-grand-marais-sauna-frame.jpg"
+						src="$lib/assets/images/project-9-grand-marais-sauna-frame.jpg"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Timber Frame Sauna</h3>
@@ -138,10 +138,10 @@
 			</div>
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Interior View"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-9-interior.jpeg"
+						src="$lib/assets/images/project-9-interior.jpeg"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Interior Spaces</h3>
@@ -149,10 +149,10 @@
 			</div>
 			<div class="group cursor-pointer lg:translate-y-12">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Kitchen Island"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-9-island.jpeg"
+						src="$lib/assets/images/project-9-island.jpeg"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Custom Kitchen</h3>
@@ -160,10 +160,10 @@
 			</div>
 			<div class="group cursor-pointer">
 				<div class="mb-4 overflow-hidden border border-outline-variant/30">
-					<img
+					<enhanced:img
 						alt="Studio Space"
 						class="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
-						src="/images/project-9-studio.jpeg"
+						src="$lib/assets/images/project-9-studio.jpeg"
 					/>
 				</div>
 				<h3 class="mb-1 font-serif text-[20px] font-semibold text-forest-evergreen">Studio Space</h3>

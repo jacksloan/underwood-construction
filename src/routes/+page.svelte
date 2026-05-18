@@ -26,10 +26,10 @@
 <!-- Hero Section -->
 <section class="hero relative min-h-[90vh] overflow-hidden bg-forest-evergreen" id="home">
 	<div class="absolute inset-0 z-0">
-		<img
+		<enhanced:img
 			alt="Primary Timber Frame Structure"
 			class="h-full w-full scale-105 object-cover opacity-60 transition-transform duration-[10000ms] hover:scale-100"
-			src="/images/home-hero.avif"
+			src="$lib/assets/images/home-hero.avif"
 		/>
 		<div class="absolute inset-0 bg-gradient-to-r from-forest-evergreen via-forest-evergreen/40 to-transparent"></div>
 	</div>
@@ -77,10 +77,10 @@
 					ctaHref="#contact"
 				>
 					<div class="overflow-hidden my-4">
-						<img
+						<enhanced:img
 							alt="Modern clean interior finishes"
 							class="w-full transition-transform duration-700 hover:scale-105"
-							src="/images/project-9-studio.jpeg"
+							src="$lib/assets/images/project-9-studio.jpeg"
 						/>
 					</div>
 				</ServiceCard>
@@ -93,10 +93,10 @@
 					description='Navigating projects through old homes can be tricky. We have years of experience handling the unique "surprises" that historic structures often hide.'
 					variant="dark"
 				>
-					<img
+					<enhanced:img
 						alt="Remodeling detail work"
 						class="h-48 w-full object-cover brightness-75 grayscale transition-all duration-700 hover:grayscale-0 hover:brightness-100"
-						src="/images/project-7-underwood-gambrel-remodel.jpg"
+						src="$lib/assets/images/project-7-underwood-gambrel-remodel.jpg"
 					/>
 				</ServiceCard>
 			</div>
@@ -120,10 +120,10 @@
 						</li>
 					</ul>
 					{#snippet image()}
-						<img
+						<enhanced:img
 							alt="Timber Frame Detail"
 							class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105"
-							src="/images/project-1-lakeside-timberframe.png"
+							src="$lib/assets/images/project-1-lakeside-timberframe.png"
 						/>
 					{/snippet}
 				</ServiceCard>
@@ -138,10 +138,10 @@
 		<div class="grid grid-cols-1 items-center gap-16 lg:grid-cols-12">
 			<div class="lg:col-span-5">
 				<div class="relative">
-					<img
+					<enhanced:img
 						alt="Completed Residential Project"
 						class="relative z-10 aspect-[4/5] w-full object-cover shadow-2xl"
-						src="/images/project-3-sauna-exterior.jpg"
+						src="$lib/assets/images/project-3-sauna-exterior.jpg"
 					/>
 					<div class="absolute -left-6 -top-6 z-0 h-32 w-32 border-l-2 border-t-2 border-harvest-oak"></div>
 					<div class="absolute -bottom-6 -right-6 z-0 h-32 w-32 border-b-2 border-r-2 border-harvest-oak"></div>

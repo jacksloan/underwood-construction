@@ -18,11 +18,11 @@
 
 <!-- Hero Section -->
 <section class="relative flex h-[70vh] w-full items-end md:h-[85vh]">
-	<img
+	<enhanced:img
 		alt="Timber Frame Entry"
 		class="absolute inset-0 h-full w-full object-cover contrast-[1.1] grayscale-[20%]"
 		style={heroTransition}
-		src="/images/project-5-timber-frame-entry.png"
+		src="$lib/assets/images/project-5-timber-frame-entry.png"
 	/>
 	<div class="absolute inset-0 bg-gradient-to-t from-forest-evergreen/80 to-transparent"></div>
 	<div class="relative mx-auto w-full max-w-container-max px-margin-mobile pb-16 md:px-gutter md:pb-24">
@@ -82,10 +82,10 @@
 			</div>
 			<div class="lg:col-span-7">
 				<div class="border border-outline-variant bg-base-100 p-2 shadow-sm">
-					<img
+					<enhanced:img
 						alt="Timber Frame Entry Detail"
 						class="aspect-[4/3] w-full object-cover"
-						src="/images/project-5-timber-frame-entry.png"
+						src="$lib/assets/images/project-5-timber-frame-entry.png"
 					/>
 				</div>
 			</div>
